@@ -38,20 +38,23 @@ export const Default = (props: BenefitCardProps): JSX.Element | null => {
   if (!hasContent) return null;
 
   return (
-    <div className={`component benefit-card w-full ${styles || ''}`} id={id}>
-      <div className="flex h-full flex-col items-center rounded-lg bg-white p-6 text-center">
+    <div className={`component benefit-card ${styles || ''}`} id={id}>
+      <div
+        className="flex h-full flex-col items-center rounded-xl px-6 py-10 text-center lg:px-8 lg:py-12"
+        style={{ backgroundColor: '#ffffff', border: '1px solid #e0e0e0' }}
+      >
         {/* Icon */}
-        <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-blue-50">
-          <SitecoreImage field={fields.Icon} className="h-12 w-12 object-contain" />
+        <div className="mb-6 flex h-16 w-16 items-center justify-center lg:h-20 lg:w-20">
+          <SitecoreImage field={fields.Icon} className="h-14 w-14 object-contain lg:h-16 lg:w-16" />
         </div>
 
         {/* Heading */}
-        <h3 className="mb-3 text-xl font-bold text-gray-900">
+        <h3 className="mb-3 text-lg font-bold text-blue-900 lg:text-xl">
           <Text field={fields.Heading} />
         </h3>
 
         {/* Description */}
-        <div className="benefit-description text-sm leading-relaxed text-gray-600">
+        <div className="text-sm leading-relaxed text-gray-600 lg:text-base">
           <RichText field={fields.Description} />
         </div>
       </div>

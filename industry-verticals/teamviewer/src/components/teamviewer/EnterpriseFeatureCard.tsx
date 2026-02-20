@@ -1,3 +1,7 @@
+/**
+ * To delete
+ */
+
 'use client';
 
 import type { JSX } from 'react';

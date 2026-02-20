@@ -4,9 +4,8 @@ import React, { type JSX } from 'react';
 import {
   TextField,
   Text,
-  RichText,
   RichTextField,
-  Placeholder,
+  RichText,
   LinkField,
   Link as SitecoreLink,
 } from '@sitecore-content-sdk/nextjs';
@@ -23,7 +22,7 @@ const defaultFields: Fields = {
   Badge: { value: 'TEAMVIEWER FOR ENTERPRISE' },
   Description: {
     value:
-      '<p>Secure, scalable, and flexible. TeamViewer solutions are built for the complex needs of global enterprises.</p>',
+      'Secure, scalable, and flexible, TeamViewer solutions are built for the complex needs of global enterprises.',
   },
   LinkText: { value: 'Learn more' },
   Link: { value: { href: '#enterprise' } },
@@ -35,47 +34,53 @@ export type EnterpriseFeatureSectionProps = ComponentProps & {
 
 export const Default = (props: EnterpriseFeatureSectionProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const { styles, DynamicPlaceholderId } = props.params;
+  const { styles } = props.params;
   const fields = props.fields || defaultFields;
-
-  const phFeatureCards = `enterprise-feature-cards-${DynamicPlaceholderId}`;
 
   return (
     <section
-      className={`component enterprise-feature-section bg-[#001846] py-12 text-white lg:py-16 ${styles || ''}`}
+      className={`component enterprise-feature-section text-white ${styles || ''}`}
       id={id}
+      style={{ backgroundColor: '#0d1b3e' }}
     >
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-8 text-center">
-          <div className="mb-4 inline-block rounded-full bg-blue-600 px-4 py-1 text-xs font-semibold tracking-wide uppercase">
-            <Text field={fields.Badge} />
-          </div>
-          <div className="enterprise-section-description mx-auto max-w-3xl text-lg">
-            <RichText field={fields.Description} />
-          </div>
-        </div>
+      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+        {/* Desktop layout: badge + description left, button right */}
+        <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+          {/* Left side: badge + description */}
+          <div className="flex flex-col gap-2">
+            {/* Badge - only visible on desktop */}
+            <div className="hidden lg:block">
+              <span
+                className="inline-block rounded px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                style={{ backgroundColor: '#3056ef' }}
+              >
+                <Text field={fields.Badge} />
+              </span>
+            </div>
 
-        {/* Feature Cards Placeholder */}
-        <div className="mb-8">
-          <Placeholder name={phFeatureCards} rendering={props.rendering} />
-        </div>
+            {/* Description */}
+              <RichText className="text-sm leading-relaxed text-white sm:text-base" field={fields.Description} />            
+          </div>
 
-        {/* Learn More Link */}
-        <div className="text-center">
-          <SitecoreLink
-            field={fields.Link}
-            className="inline-flex items-center gap-2 font-semibold text-white hover:underline"
-          >
-            <Text field={fields.LinkText} />
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </SitecoreLink>
+          {/* CTA - underlined link on mobile/tablet, outlined button on desktop */}
+          <div className="shrink-0">
+            {/* Mobile / Tablet: underlined link */}
+            <SitecoreLink
+              field={fields.Link}
+              className="inline-block font-semibold text-white underline lg:hidden"
+            >
+              <Text field={fields.LinkText} />
+            </SitecoreLink>
+
+            {/* Desktop: outlined button */}
+            <SitecoreLink
+              field={fields.Link}
+              className="hidden rounded-full border-2 border-white bg-white px-8 py-2.5 text-sm font-semibold transition-colors hover:bg-transparent hover:text-white lg:inline-block"
+              style={{ color: '#0d1b3e' }}
+            >
+              <Text field={fields.LinkText} />
+            </SitecoreLink>
+          </div>
         </div>
       </div>
     </section>

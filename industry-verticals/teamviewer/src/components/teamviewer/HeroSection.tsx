@@ -21,6 +21,18 @@ interface Fields {
   SecondaryButtonLink: LinkField;
 }
 
+const defaultFields: Fields = {
+  Badge: { value: 'NEW' },
+  Heading: { value: 'Automated IT. Powered by AI.' },
+  Subheading: {
+    value: '<p>The remote technology you know and trust, built better.</p>',
+  },
+  PrimaryButtonText: { value: 'Free business trial' },
+  PrimaryButtonLink: { value: { href: '#trial' } },
+  SecondaryButtonText: { value: 'View plans and pricing' },
+  SecondaryButtonLink: { value: { href: '#pricing' } },
+};
+
 export type HeroSectionProps = ComponentProps & {
   fields: Fields;
 };
@@ -28,7 +40,7 @@ export type HeroSectionProps = ComponentProps & {
 export const Default = (props: HeroSectionProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { styles } = props.params;
-  const fields = props.fields;
+  const fields = props.fields || defaultFields;
 
   return (
     <section

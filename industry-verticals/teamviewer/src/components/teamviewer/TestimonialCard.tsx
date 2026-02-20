@@ -1,38 +1,80 @@
 'use client';
 
 import type { JSX } from 'react';
-import { RichText, RichTextField } from '@sitecore-content-sdk/nextjs';
+import {
+  TextField,
+  Text,
+  ImageField,
+  Image as SitecoreImage,
+  LinkField,
+  Link as SitecoreLink,
+} from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
 interface Fields {
-  Quote: RichTextField;
+  Image: ImageField;
+  CompanyLogo: ImageField;
+  Description: TextField;
+  Link: LinkField;
 }
 
 const defaultFields: Fields = {
-  Quote: {
-    value: '<p>Beyondsoft uses TeamViewer to strengthen its global aftercare support.</p>',
+  Image: {
+    value: {
+      src: 'https://placehold.co/600x400/1a3a5c/ffffff?text=Case+Study',
+      alt: 'Case study image',
+      width: '600',
+      height: '400',
+    },
   },
+  CompanyLogo: {
+    value: {
+      src: 'https://placehold.co/120x40/ffffff/333333?text=Logo',
+      alt: 'Company logo',
+      width: '120',
+      height: '40',
+    },
+  },
+  Description: {
+    value:
+      'Mitsubishi Electric enhances the support experience and improves repair processes with augmented reality.',
+  },
+  Link: { value: { href: '#case-study' } },
 };
 
 export type TestimonialCardProps = ComponentProps & {
   fields: Fields;
 };
 
-export const Default = (props: TestimonialCardProps): JSX.Element | null => {
+export const Default = (props: TestimonialCardProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { styles } = props.params;
   const fields = props.fields || defaultFields;
 
-  const hasContent = fields.Quote?.value;
-  if (!hasContent) return null;
-
   return (
-    <div className={`component testimonial-card w-full ${styles || ''}`} id={id}>
-      <div className="flex h-full flex-col rounded-lg border border-gray-200 bg-white p-6 lg:p-8">
-        <div className="testimonial-quote text-base text-gray-700 lg:text-lg">
-          <RichText field={fields.Quote} />
+    <div className={`component testimonial-card ${styles || ''}`} id={id}>
+      <SitecoreLink field={fields.Link} className="group block">
+        {/* Image container with logo badge */}
+        <div className="relative overflow-hidden rounded-lg">
+          <SitecoreImage
+            field={fields.Image}
+            className="aspect-[3/2] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+
+          {/* Company logo badge */}
+          <div className="absolute left-3 top-3 rounded-md bg-white px-2.5 py-1.5 shadow-sm">
+            <SitecoreImage
+              field={fields.CompanyLogo}
+              className="h-3 w-auto object-contain sm:h-6"
+            />
+          </div>
         </div>
-      </div>
+
+        {/* Description */}
+        <p className="mt-4 text-sm font-bold leading-snug text-gray-900 lg:text-base">
+          <Text field={fields.Description} />
+        </p>
+      </SitecoreLink>
     </div>
   );
 };

@@ -35,16 +35,21 @@ export const Default = (props: IntegrationsSectionProps): JSX.Element => {
 
   return (
     <section
-      className={`component integrations-section bg-gray-50 py-12 lg:py-16 ${styles || ''}`}
+      className={`component integrations-section py-12 lg:py-20 ${styles || ''}`}
       id={id}
+      style={{ backgroundColor: 'rgb(247, 247, 247)' }}
     >
-      <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 lg:mb-12 lg:text-3xl">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 lg:mb-12 lg:text-4xl">
           <Text field={fields.Heading} />
         </h2>
 
-        {/* Integration Logos */}
-        <div className="mb-8 grid grid-cols-2 gap-6 sm:grid-cols-4 lg:grid-cols-8">
+        {/*
+          Integration logos grid:
+          - Mobile / Tablet: 4 per row, centered
+          - Desktop: all 8 in one row, centered
+        */}
+        <div className="integration-logos-grid mb-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-5 lg:gap-x-12 lg:gap-y-6">
           <Placeholder name={phIntegrationLogos} rendering={props.rendering} />
         </div>
 
@@ -52,15 +57,34 @@ export const Default = (props: IntegrationsSectionProps): JSX.Element => {
         <div className="text-center">
           <SitecoreLink
             field={fields.Link}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline"
+            className="inline-flex items-center gap-2 font-semibold text-blue-700 hover:text-blue-900"
           >
             <Text field={fields.LinkText} />
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </SitecoreLink>
         </div>
       </div>
+
+      {/* Scoped styles: mobile/tablet 4 per row, desktop all in one row */}
+      <style jsx>{`
+        .integration-logos-grid :global(> *) {
+          flex: 0 0 calc(25% - 1.5rem);
+          max-width: calc(25% - 1.5rem);
+        }
+        @media (min-width: 1024px) {
+          .integration-logos-grid :global(> *) {
+            flex: 0 0 auto;
+            max-width: none;
+          }
+        }
+      `}</style>
     </section>
   );
 };
