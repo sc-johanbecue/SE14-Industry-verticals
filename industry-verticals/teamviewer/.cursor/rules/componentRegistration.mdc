@@ -23,7 +23,7 @@ Replace variables using these rules:
 - `{{RootWebsitePath}} = "/sitecore/content/teamviewer/teamviewer"`
 - `{{HomeWebsitePath}} = "/sitecore/content/teamviewer/teamviewer/home"`
 - `{{ComponentsFolder}} = "/sitecore/layout/Renderings/Project/teamviewer"`
-- `{{MediaFolder}} = "/sitecore/media library/Project/hackathon/hackathon"`
+- `{{MediaFolder}} = "/sitecore/media library/Project/teamviewer/teamviewer"`
 - `{{DataTemplateIcon}} = ""`
 - `{{FolderTemplateIcon}} = "/sitecore/shell/themes/standard/Applications/32x32/folder.png"`
 
@@ -51,9 +51,11 @@ System templates:
 ## IMPORTANT execution rules (hard constraints)
 
 1. **Standard values rules**
-   - For any **LinkField** in any `__Standard Values` item: set its standard value to point to `{{HomeWebsitePath}}` (ID-based value).
+   - For any **DropLink** field in any `__Standard Values` item: set its standard value to point to `{{HomeWebsitePath}}` (ID-based value).
 
-2. **Verification & traceability**
+- For any **General Link** field in any `__Standard Values` item: don't set a default value.
+
+1. **Verification & traceability**
    - After creating any item/template, immediately retrieve it and verify it exists.
    - Always return the created item’s **ID and full path**.
    - Persist and reuse these references in later steps:
@@ -95,15 +97,15 @@ Inside `{{GeneratedComponentTemplatesRoot}}`, create a **Template** named `{{Tem
 
 #### Step 2.2
 
-Under `{{GeneratedDataTemplate}}`, create a **Template Section** named `Data` inheriting from `{{TemplateSectionTemplate}}`.
+Under `{{GeneratedDataTemplate}}`, create a **Template Section** named `Data`. This item needs to be similar as `/sitecore/templates/Feature/JSS Experience Accelerator/Page Content/Text/Text`
 Store as `{{GeneratedDataTemplateDataSection}}`.
 
 #### Step 2.3
 
-Create template fields under `{{GeneratedDataTemplateDataSection}}`:
+Create template field items under `{{GeneratedDataTemplateDataSection}}`,:
+Those items need to be similar as `/sitecore/templates/Feature/JSS Experience Accelerator/Page Content/Text/Text/Text`
 
 - Fields must match the component’s `Fields` interface (or equivalent field definitions).
-- Each field item inherits from `{{TemplateFieldTemplate}}`.
 - Set:
   - **Type** = correct Sitecore field type (Text, Rich Text, Image, General Link, etc.)
   - **Source** rules (Image/Rich Text/General Link) as defined above
