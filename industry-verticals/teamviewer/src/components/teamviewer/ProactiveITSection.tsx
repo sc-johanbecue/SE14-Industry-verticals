@@ -1,11 +1,7 @@
 'use client';
 
 import React, { type JSX } from 'react';
-import {
-  TextField,
-  Text,
-  Placeholder,
-} from '@sitecore-content-sdk/nextjs';
+import { TextField, Text, Placeholder } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
 interface Fields {

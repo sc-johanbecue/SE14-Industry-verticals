@@ -21,8 +21,7 @@ interface Fields {
 const defaultFields: Fields = {
   Heading: { value: "Let's find the right solution for your business" },
   Description: {
-    value:
-      '<p>Connect with one of our customer success specialists and start defining your TeamViewer setup.</p>',
+    value: '<p>Connect with one of our customer success specialists and start defining your TeamViewer setup.</p>',
   },
   ButtonText: { value: 'Get in touch' },
   ButtonLink: { value: { href: '#contact' } },
@@ -39,21 +38,23 @@ export const Default = (props: CTASectionProps): JSX.Element => {
 
   return (
     <section
-      className={`component cta-section bg-linear-to-r from-blue-600 to-blue-700 py-16 text-white lg:py-20 ${styles || ''}`}
+      className={`component cta-section py-14 text-white lg:py-20 ${styles || ''}`}
       id={id}
+      style={{ backgroundColor: '#3355FF' }}
     >
-      <div className="mx-auto max-w-4xl px-4 text-center">
-        <h2 className="mb-4 text-3xl font-bold lg:text-4xl">
+      <div className="mx-auto max-w-3xl px-6 text-center">
+        <h2 className="mb-4 text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">
           <Text field={fields.Heading} />
         </h2>
 
-        <div className="cta-description mb-8 text-lg lg:text-xl">
+        <div className="mb-8 text-base leading-relaxed text-white opacity-90 lg:text-lg">
           <RichText field={fields.Description} />
         </div>
 
         <SitecoreLink
           field={fields.ButtonLink}
-          className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-base font-semibold text-blue-600 hover:bg-gray-100"
+          className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-bold transition-colors hover:bg-gray-100"
+          style={{ color: '#0d1b3e' }}
         >
           <Text field={fields.ButtonText} />
         </SitecoreLink>

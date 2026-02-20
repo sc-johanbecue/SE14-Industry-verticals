@@ -58,11 +58,11 @@ export const Default = (props: TestimonialCardProps): JSX.Element => {
         <div className="relative overflow-hidden rounded-lg">
           <SitecoreImage
             field={fields.Image}
-            className="aspect-[3/2] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="aspect-3/2 w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
 
           {/* Company logo badge */}
-          <div className="absolute left-3 top-3 rounded-md bg-white px-2.5 py-1.5 shadow-sm">
+          <div className="absolute top-3 left-3 rounded-md bg-white px-2.5 py-1.5 shadow-sm">
             <SitecoreImage
               field={fields.CompanyLogo}
               className="h-3 w-auto object-contain sm:h-6"
@@ -71,7 +71,7 @@ export const Default = (props: TestimonialCardProps): JSX.Element => {
         </div>
 
         {/* Description */}
-        <p className="mt-4 text-sm font-bold leading-snug text-gray-900 lg:text-base">
+        <p className="mt-4 text-sm leading-snug font-bold text-gray-900 lg:text-base">
           <Text field={fields.Description} />
         </p>
       </SitecoreLink>

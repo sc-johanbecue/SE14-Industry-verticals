@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, type JSX } from 'react';
+import { useState, type JSX } from 'react';
 import { TextField, RichTextField, Text, RichText } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
@@ -22,14 +22,21 @@ const defaultFields: Fields = {
 };
 
 export const Default = (props: FAQCardProps): JSX.Element => {
+  const id = props.params?.RenderingIdentifier;
+  const styles = props.params?.styles || '';
   const fields = props.fields || defaultFields;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
+      className={`component faq-card ${styles || ''}`}
+      id={id}
       style={{
-        borderBottom: '1px solid #e0e0e0',
-        padding: '24px 0',
+        border: '1px solid #e0e0e0',
+        borderRadius: '12px',
+        backgroundColor: '#ffffff',
+        marginBottom: '12px',
+        overflow: 'hidden',
       }}
     >
       <button
@@ -43,42 +50,48 @@ export const Default = (props: FAQCardProps): JSX.Element => {
           border: 'none',
           cursor: 'pointer',
           textAlign: 'left',
-          padding: '0',
+          padding: '20px 24px',
         }}
       >
         <span
           style={{
-            fontSize: '18px',
-            fontWeight: '600',
-            color: '#001E50',
+            fontSize: '16px',
+            fontWeight: '700',
+            color: '#0d1b3e',
             paddingRight: '20px',
           }}
         >
           <Text field={fields.Question} />
         </span>
 
-        <span
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
           style={{
-            fontSize: '24px',
-            fontWeight: '300',
-            color: '#001E50',
             flexShrink: 0,
             transition: 'transform 0.3s ease',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
           }}
         >
-          ▼
-        </span>
+          <path
+            d="M5 7.5L10 12.5L15 7.5"
+            stroke="#0d1b3e"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </button>
 
       {isOpen && (
         <div
           style={{
-            marginTop: '16px',
+            padding: '0 24px 20px 24px',
             fontSize: '15px',
             color: '#555555',
             lineHeight: '1.6',
-            paddingRight: '44px',
           }}
         >
           <RichText field={fields.Answer} />

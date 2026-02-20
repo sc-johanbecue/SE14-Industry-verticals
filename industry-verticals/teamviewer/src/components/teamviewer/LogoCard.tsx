@@ -29,14 +29,13 @@ export const WithName = (props: LogoCardProps): JSX.Element => {
   const fields = props.fields || defaultFields;
 
   return (
-    <div
-      className={`component logo-with-name-card flex items-center gap-2.5`}
-      id={id}
-    >
+    <div className={`component logo-with-name-card flex items-center gap-2.5`} id={id}>
       <SitecoreImage field={fields.Logo} className="h-6 w-6 shrink-0 object-contain" />
-      <span className="text-sm font-medium whitespace-nowrap text-gray-700">
-        <Text field={fields.Name} />
-      </span>
+      <Text
+        tag="span"
+        field={fields.Name}
+        className="text-[8px] font-medium whitespace-nowrap text-gray-700 sm:text-sm"
+      />
     </div>
   );
 };

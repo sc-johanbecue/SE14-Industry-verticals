@@ -51,7 +51,7 @@ export const Default = (props: EnterpriseFeatureSectionProps): JSX.Element => {
             {/* Badge - only visible on desktop */}
             <div className="hidden lg:block">
               <span
-                className="inline-block rounded px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                className="inline-block rounded px-3 py-1 text-xs font-bold tracking-wider text-white uppercase"
                 style={{ backgroundColor: '#3056ef' }}
               >
                 <Text field={fields.Badge} />
@@ -59,7 +59,10 @@ export const Default = (props: EnterpriseFeatureSectionProps): JSX.Element => {
             </div>
 
             {/* Description */}
-              <RichText className="text-sm leading-relaxed text-white sm:text-base" field={fields.Description} />            
+            <RichText
+              className="text-sm leading-relaxed text-white sm:text-base"
+              field={fields.Description}
+            />
           </div>
 
           {/* CTA - underlined link on mobile/tablet, outlined button on desktop */}

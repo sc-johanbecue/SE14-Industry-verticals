@@ -1,6 +1,6 @@
 'use client';
 
-import React, { type JSX } from 'react';
+import { type JSX } from 'react';
 import { TextField, Placeholder, Text } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
@@ -17,39 +17,25 @@ const defaultFields: Fields = {
 };
 
 export const Default = (props: FAQSectionProps): JSX.Element => {
+  const id = props.params?.RenderingIdentifier;
+  const styles = props.params?.styles || '';
   const fields = props.fields || defaultFields;
   const { rendering, params } = props;
 
+  const phFAQCards = `faq-cards-${params?.DynamicPlaceholderId || '1'}`;
+
   return (
-    <section
-      style={{
-        backgroundColor: '#ffffff',
-        padding: '80px 20px',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '900px',
-          margin: '0 auto',
-        }}
-      >
+    <section className={`component faq-section bg-white py-12 lg:py-20 ${styles}`} id={id}>
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <h2
-          style={{
-            fontSize: '36px',
-            fontWeight: 'bold',
-            color: '#001E50',
-            textAlign: 'center',
-            marginBottom: '48px',
-          }}
+          className="mb-10 text-center text-2xl font-bold lg:mb-12 lg:text-3xl"
+          style={{ color: '#0d1b3e' }}
         >
           <Text field={fields.Heading} />
         </h2>
 
         <div>
-          <Placeholder
-            name={`faq-cards-${params?.DynamicPlaceholderId || '1'}`}
-            rendering={rendering}
-          />
+          <Placeholder name={phFAQCards} rendering={rendering} />
         </div>
       </div>
     </section>
