@@ -4,13 +4,7 @@ import React, { type JSX } from 'react';
 import { Placeholder } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
-interface Fields {}
-
-type PricingCardsSectionProps = ComponentProps & {
-  fields?: Fields;
-};
-
-export const Default = (props: PricingCardsSectionProps): JSX.Element => {
+export const Default = (props: ComponentProps): JSX.Element => {
   const { rendering, params } = props;
 
   return (
