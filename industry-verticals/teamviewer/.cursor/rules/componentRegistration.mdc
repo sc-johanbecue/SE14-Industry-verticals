@@ -244,7 +244,7 @@ Set fields on `{{GeneratedRenderingItem}}`:
 
 - **Component Name** = `{{TSXComponentName}}`
 - **Parameters Template** = `{{GeneratedRenderingTemplate}}` (template ID)
-- **Datasource Template** = `{{GeneratedDataTemplate}}`
+- **Datasource Template** = `{{GeneratedDataTemplate}}` (path)
 - **Datasource Location** =
   `query:$site/*[@@name='Data']/*[@@templatename='{{ComponentName}} Folder']|query:$sharedSites/_[@@name='Data']/_[@@templatename='{{ComponentName}} Folder']`
   **Data source** = `query:$site/*[@@name='Data']/*[@@templatename='{{ComponentName}} Folder']|query:$sharedSites/_[@@name='Data']/_[@@templatename='{{ComponentName}} Folder']`

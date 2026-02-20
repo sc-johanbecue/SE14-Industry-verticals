@@ -16,12 +16,6 @@ interface Fields {
   Link: LinkField;
 }
 
-const defaultFields: Fields = {
-  Heading: { value: 'TeamViewer ONE' },
-  LinkText: { value: 'Explore the all-in-one platform' },
-  Link: { value: { href: '#platform' } },
-};
-
 export type FeaturesSectionProps = ComponentProps & {
   fields: Fields;
 };
@@ -29,7 +23,7 @@ export type FeaturesSectionProps = ComponentProps & {
 export const Default = (props: FeaturesSectionProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { styles, DynamicPlaceholderId } = props.params;
-  const fields = props.fields || defaultFields;
+  const fields = props.fields;
 
   const phFeatureCards = `feature-cards-${DynamicPlaceholderId}`;
 
@@ -39,12 +33,14 @@ export const Default = (props: FeaturesSectionProps): JSX.Element => {
       id={id}
     >
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 lg:text-3xl">
-          <Text field={fields.Heading} />
-        </h2>
+        <Text
+          tag="h2"
+          field={fields.Heading}
+          className="mb-8 text-center text-2xl font-bold text-gray-900 lg:text-3xl"
+        />
 
         {/* Feature Cards Grid */}
-        <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 col-12 pr-4">
           <Placeholder name={phFeatureCards} rendering={props.rendering} />
         </div>
 

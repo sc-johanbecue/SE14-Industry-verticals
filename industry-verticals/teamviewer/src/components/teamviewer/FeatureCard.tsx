@@ -21,39 +21,24 @@ interface Fields {
   Image: ImageField;
 }
 
-const defaultFields: Fields = {
-  Heading: { value: 'IT access and support' },
-  Description: {
-    value: '<p>Fix issues remotely. Free for personal use.</p>',
-  },
-  LinkText: { value: 'Learn more' },
-  Link: { value: { href: '#' } },
-  Image: { value: { src: '/feature-image.jpg', alt: 'Feature' } },
-};
-
 export type FeatureCardProps = ComponentProps & {
   fields: Fields;
 };
 
 export const Default = (props: FeatureCardProps): JSX.Element | null => {
   const id = props.params.RenderingIdentifier;
-  const { styles } = props.params;
-  const fields = props.fields || defaultFields;
-
-  const hasContent = fields.Heading?.value;
-  if (!hasContent) return null;
+  const fields = props.fields;
 
   return (
-    <div className={`component feature-card w-full ${styles || ''}`} id={id}>
+    <div className={`component feature-card w-full`} id={id}>
       <div className="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
         {/* Content */}
         <div className="flex-1 p-6">
-          <h3 className="mb-2 text-xl font-bold text-gray-900">
-            <Text field={fields.Heading} />
-          </h3>
-          <div className="feature-description mb-4 text-sm text-gray-600">
-            <RichText field={fields.Description} />
-          </div>
+          <Text tag="h3" field={fields.Heading} className="mb-2 text-xl font-bold text-gray-900" />
+          <RichText
+            className="feature-description mb-4 text-sm text-gray-600"
+            field={fields.Description}
+          />
           <SitecoreLink
             field={fields.Link}
             className="text-sm font-semibold text-blue-600 hover:underline"
