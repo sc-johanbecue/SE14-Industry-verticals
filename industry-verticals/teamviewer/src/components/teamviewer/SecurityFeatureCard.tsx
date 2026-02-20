@@ -58,4 +58,3 @@ export const Default = (props: SecurityFeatureCardProps): JSX.Element | null => 
     </div>
   );
 };
-

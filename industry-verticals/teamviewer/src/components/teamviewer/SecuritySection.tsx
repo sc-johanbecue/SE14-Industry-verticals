@@ -62,4 +62,3 @@ export const Default = (props: SecuritySectionProps): JSX.Element => {
     </section>
   );
 };
-

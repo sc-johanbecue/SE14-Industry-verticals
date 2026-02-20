@@ -35,4 +35,3 @@ export const Default = (props: HeaderProps): JSX.Element => {
     </header>
   );
 };
-

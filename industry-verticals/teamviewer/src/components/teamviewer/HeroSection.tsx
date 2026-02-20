@@ -100,4 +100,3 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
     </section>
   );
 };
-

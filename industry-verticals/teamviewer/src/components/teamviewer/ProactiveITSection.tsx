@@ -41,4 +41,3 @@ export const Default = (props: ProactiveITSectionProps): JSX.Element => {
     </section>
   );
 };
-

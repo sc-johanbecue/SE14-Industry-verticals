@@ -81,4 +81,3 @@ export const Default = (props: EnterpriseFeatureSectionProps): JSX.Element => {
     </section>
   );
 };
-

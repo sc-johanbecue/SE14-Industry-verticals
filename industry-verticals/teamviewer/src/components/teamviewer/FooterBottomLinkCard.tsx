@@ -32,4 +32,3 @@ export const Default = (props: FooterBottomLinkCardProps): JSX.Element => {
     />
   );
 };
-

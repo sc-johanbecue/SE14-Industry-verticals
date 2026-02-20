@@ -74,4 +74,3 @@ export const Default = (props: DiscoverSectionProps): JSX.Element => {
     </section>
   );
 };
-

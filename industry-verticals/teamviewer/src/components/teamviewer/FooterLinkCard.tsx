@@ -32,4 +32,3 @@ export const Default = (props: FooterLinkCardProps): JSX.Element | null => {
     </div>
   );
 };
-

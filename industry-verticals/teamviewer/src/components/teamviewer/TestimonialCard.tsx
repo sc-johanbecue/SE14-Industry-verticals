@@ -36,4 +36,3 @@ export const Default = (props: TestimonialCardProps): JSX.Element | null => {
     </div>
   );
 };
-

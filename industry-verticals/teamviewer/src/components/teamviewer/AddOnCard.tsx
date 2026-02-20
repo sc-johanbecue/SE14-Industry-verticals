@@ -159,4 +159,4 @@ export const Default = (props: AddOnCardProps): JSX.Element => {
       </div>
     </div>
   );
-}
+};

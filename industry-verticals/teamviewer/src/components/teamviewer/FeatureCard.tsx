@@ -70,4 +70,3 @@ export const Default = (props: FeatureCardProps): JSX.Element | null => {
     </div>
   );
 };
-

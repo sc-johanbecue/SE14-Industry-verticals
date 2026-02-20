@@ -43,4 +43,3 @@ export const Default = (props: PricingCardsSectionProps): JSX.Element => {
     </section>
   );
 };
-

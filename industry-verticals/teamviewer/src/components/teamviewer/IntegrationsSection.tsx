@@ -64,4 +64,3 @@ export const Default = (props: IntegrationsSectionProps): JSX.Element => {
     </section>
   );
 };
-

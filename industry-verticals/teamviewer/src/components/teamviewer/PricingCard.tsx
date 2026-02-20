@@ -52,7 +52,7 @@ const defaultFields: Fields = {
 
 export const Default = (props: PricingCardProps): JSX.Element => {
   const fields = props.fields || defaultFields;
-  const highlightColor = fields.HighlightColor?.value as string || '#4051D5';
+  const highlightColor = (fields.HighlightColor?.value as string) || '#4051D5';
 
   return (
     <div
@@ -248,4 +248,3 @@ export const Default = (props: PricingCardProps): JSX.Element => {
     </div>
   );
 };
-

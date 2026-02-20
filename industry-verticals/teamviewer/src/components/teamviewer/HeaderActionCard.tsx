@@ -48,4 +48,3 @@ export const Default = (props: HeaderActionCardProps): JSX.Element | null => {
     </div>
   );
 };
-

@@ -61,4 +61,3 @@ export const Default = (props: CTASectionProps): JSX.Element => {
     </section>
   );
 };
-

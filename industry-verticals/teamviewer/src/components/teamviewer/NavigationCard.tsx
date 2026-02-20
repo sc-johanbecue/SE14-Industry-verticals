@@ -40,4 +40,3 @@ export const Default = (props: NavigationCardProps): JSX.Element | null => {
     </div>
   );
 };
-

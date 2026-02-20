@@ -34,4 +34,3 @@ export const Default = (props: LogoCardProps): JSX.Element | null => {
     </div>
   );
 };
-

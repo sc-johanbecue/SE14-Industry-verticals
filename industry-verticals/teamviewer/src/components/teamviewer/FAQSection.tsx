@@ -21,21 +21,27 @@ export const Default = (props: FAQSectionProps): JSX.Element => {
   const { rendering, params } = props;
 
   return (
-    <section style={{
-      backgroundColor: '#ffffff',
-      padding: '80px 20px',
-    }}>
-      <div style={{
-        maxWidth: '900px',
-        margin: '0 auto',
-      }}>
-        <h2 style={{
-          fontSize: '36px',
-          fontWeight: 'bold',
-          color: '#001E50',
-          textAlign: 'center',
-          marginBottom: '48px',
-        }}>
+    <section
+      style={{
+        backgroundColor: '#ffffff',
+        padding: '80px 20px',
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+        }}
+      >
+        <h2
+          style={{
+            fontSize: '36px',
+            fontWeight: 'bold',
+            color: '#001E50',
+            textAlign: 'center',
+            marginBottom: '48px',
+          }}
+        >
           <Text field={fields.Heading} />
         </h2>
 

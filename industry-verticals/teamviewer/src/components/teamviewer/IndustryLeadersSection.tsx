@@ -48,4 +48,3 @@ export const Default = (props: IndustryLeadersSectionProps): JSX.Element => {
     </section>
   );
 };
-

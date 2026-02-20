@@ -38,4 +38,3 @@ export const Default = (props: HeaderLogoCardProps): JSX.Element | null => {
     </div>
   );
 };
-

@@ -73,4 +73,3 @@ export const Default = (props: FooterLinkGroupCardProps): JSX.Element => {
     </div>
   );
 };
-

@@ -41,4 +41,3 @@ export const Default = (props: EnterpriseFeatureCardProps): JSX.Element | null =
     </div>
   );
 };
-

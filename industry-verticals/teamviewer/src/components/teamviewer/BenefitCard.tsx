@@ -58,4 +58,3 @@ export const Default = (props: BenefitCardProps): JSX.Element | null => {
     </div>
   );
 };
-

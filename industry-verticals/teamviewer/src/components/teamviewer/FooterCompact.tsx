@@ -235,4 +235,3 @@ export const Default = (props: FooterCompactProps): JSX.Element => {
     </footer>
   );
 };
-

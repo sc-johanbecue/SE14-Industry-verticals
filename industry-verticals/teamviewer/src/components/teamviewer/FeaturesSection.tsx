@@ -64,4 +64,3 @@ export const Default = (props: FeaturesSectionProps): JSX.Element => {
     </section>
   );
 };
-
