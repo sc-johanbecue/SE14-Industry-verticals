@@ -41,19 +41,18 @@ export const Default = (props: AddOnsSectionProps): JSX.Element => {
     <section className={`component add-ons-section bg-white py-12 lg:py-20 ${styles}`} id={id}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2
+
+        <Text
+          tag="h2"
           className="mb-2 text-center text-2xl font-bold lg:text-3xl"
           style={{ color: '#0d1b3e' }}
-        >
-          <Text field={fields.Heading} />
-        </h2>
+          field={fields.Heading}
+        />
 
         {/* Subheading */}
-        {fields.Subheading?.value && (
-          <p className="mb-10 text-center text-sm text-gray-500 lg:mb-14 lg:text-base">
-            <Text field={fields.Subheading} />
-          </p>
-        )}
+        <p className="mb-10 text-center text-sm text-gray-500 lg:mb-14 lg:text-base">
+          <Text field={fields.Subheading} />
+        </p>
 
         {/* Add-on cards grid */}
         <div className="add-on-cards-grid flex flex-wrap justify-center gap-6 lg:gap-8">

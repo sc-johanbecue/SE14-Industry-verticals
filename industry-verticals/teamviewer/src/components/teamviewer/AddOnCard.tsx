@@ -74,14 +74,12 @@ export const Default = (props: AddOnCardProps): JSX.Element => {
       {/* Wrapper with relative positioning for the badge overlap */}
       <div className="relative pt-3">
         {/* Badge - overlaps the card top-left */}
-        {fields.Badge?.value && (
-          <div
-            className="absolute top-0 left-4 z-10 rounded px-3 py-1 text-xs font-bold tracking-wide text-white uppercase"
-            style={{ backgroundColor: '#1a8a3f' }}
-          >
-            <Text field={fields.Badge} />
-          </div>
-        )}
+        <div
+          className="absolute top-0 left-4 z-10 rounded px-3 py-1 text-xs font-bold tracking-wide text-white uppercase"
+          style={{ backgroundColor: '#1a8a3f' }}
+        >
+          <Text field={fields.Badge} />
+        </div>
 
         {/* Card */}
         <div
@@ -99,14 +97,21 @@ export const Default = (props: AddOnCardProps): JSX.Element => {
           {/* Content area */}
           <div className="flex flex-1 flex-col px-5 pt-5 pb-6">
             {/* Heading */}
-            <h3 className="mb-2 text-base font-bold" style={{ color: '#0d1b3e' }}>
-              <Text field={fields.Heading} />
-            </h3>
+
+            <Text
+              tag="h3"
+              field={fields.Heading}
+              className="mb-2 text-base font-bold"
+              style={{ color: '#0d1b3e' }}
+            />
 
             {/* Description */}
-            <div className="mb-3 text-sm leading-relaxed text-gray-500">
-              <RichText field={fields.Description} />
-            </div>
+
+            <RichText
+              tag="div"
+              className="mb-3 text-sm leading-relaxed text-gray-500"
+              field={fields.Description}
+            />
 
             {/* Highlight items placeholder */}
             <div className="mb-4">
@@ -114,24 +119,22 @@ export const Default = (props: AddOnCardProps): JSX.Element => {
             </div>
 
             {/* CTA link (optional) */}
-            {fields.CTALink?.value?.href && (
-              <div className="mt-auto">
-                <SitecoreLink
-                  field={fields.CTALink}
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900"
-                >
-                  <Text field={fields.CTAText} />
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2.5}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </SitecoreLink>
-              </div>
-            )}
+            <div className="mt-auto">
+              <SitecoreLink
+                field={fields.CTALink}
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900"
+              >
+                <Text field={fields.CTAText} />
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </SitecoreLink>
+            </div>
           </div>
         </div>
       </div>

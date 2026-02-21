@@ -41,7 +41,7 @@ export const Default = (props: HighlightItemCardProps): JSX.Element => {
           style={{
             width: '22px',
             height: '22px',
-            backgroundColor: '#0e7569',
+            backgroundColor: '#2747d0',
             marginTop: '1px',
           }}
         >
@@ -57,9 +57,7 @@ export const Default = (props: HighlightItemCardProps): JSX.Element => {
         </div>
 
         {/* Label */}
-        <span className="text-sm leading-snug text-gray-700">
-          <Text field={fields.Label} />
-        </span>
+        <Text tag="span" field={fields.Label} className="text-sm leading-snug text-gray-700" />
       </div>
     </div>
   );
