@@ -24,6 +24,16 @@ export const Default = (props: LogoCardProps): JSX.Element | null => {
   return <SitecoreImage field={fields.Logo} className="object-contain" />;
 };
 
+export const Boxed = (props: LogoCardProps): JSX.Element | null => {
+  const fields = props.fields || defaultFields;
+
+  return (
+    <div>
+      <SitecoreImage field={fields.Logo} className="h-20 w-auto shrink-0 object-contain" />
+    </div>
+  );
+};
+
 export const WithName = (props: LogoCardProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const fields = props.fields || defaultFields;
