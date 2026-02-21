@@ -6,6 +6,40 @@ import { Form } from '@sitecore-content-sdk/nextjs';
 // end of built-in components
 import * as Title from 'src/components/title/Title';
 import * as ThemeEditor from 'src/components/theme-editor/ThemeEditor';
+import * as TrustedLogosSection from 'src/components/teamviewer/TrustedLogosSection';
+import * as TestimonialCard from 'src/components/teamviewer/TestimonialCard';
+import * as teamviewerHeader from 'src/components/teamviewer/teamviewerHeader';
+import * as teamviewerFooter from 'src/components/teamviewer/teamviewerFooter';
+import * as SecuritySection from 'src/components/teamviewer/SecuritySection';
+import * as SecurityFeatureCard from 'src/components/teamviewer/SecurityFeatureCard';
+import * as ProactiveITSection from 'src/components/teamviewer/ProactiveITSection';
+import * as PricingHeroSection from 'src/components/teamviewer/PricingHeroSection';
+import * as PricingCardsSection from 'src/components/teamviewer/PricingCardsSection';
+import * as PricingCard from 'src/components/teamviewer/PricingCard';
+import * as NavigationCard from 'src/components/teamviewer/NavigationCard';
+import * as LogoCard from 'src/components/teamviewer/LogoCard';
+import * as IntegrationsSection from 'src/components/teamviewer/IntegrationsSection';
+import * as IndustryLeadersSection from 'src/components/teamviewer/IndustryLeadersSection';
+import * as HeroSection from 'src/components/teamviewer/HeroSection';
+import * as HeaderLogoCard from 'src/components/teamviewer/HeaderLogoCard';
+import * as HeaderActionCard from 'src/components/teamviewer/HeaderActionCard';
+import * as FooterLinkGroupCard from 'src/components/teamviewer/FooterLinkGroupCard';
+import * as FooterLinkCard from 'src/components/teamviewer/FooterLinkCard';
+import * as FooterCompact from 'src/components/teamviewer/FooterCompact';
+import * as FooterBottomLinkCard from 'src/components/teamviewer/FooterBottomLinkCard';
+import * as FeaturesSection from 'src/components/teamviewer/FeaturesSection';
+import * as FeatureCard from 'src/components/teamviewer/FeatureCard';
+import * as FAQSection from 'src/components/teamviewer/FAQSection';
+import * as FAQCard from 'src/components/teamviewer/FAQCard';
+import * as EnterpriseFeatureSection from 'src/components/teamviewer/EnterpriseFeatureSection';
+import * as EnterpriseFeatureCard from 'src/components/teamviewer/EnterpriseFeatureCard';
+import * as DiscoverSection from 'src/components/teamviewer/DiscoverSection';
+import * as CTASection from 'src/components/teamviewer/CTASection';
+import * as ComparisonSection from 'src/components/teamviewer/ComparisonSection';
+import * as BenefitCard from 'src/components/teamviewer/BenefitCard';
+import * as AddOnsSection from 'src/components/teamviewer/AddOnsSection';
+import * as AddOnCardHighlight from 'src/components/teamviewer/AddOnCardHighlight';
+import * as AddOnCard from 'src/components/teamviewer/AddOnCard';
 import * as Subscribe from 'src/components/subscribe/Subscribe';
 import * as SocialFollow from 'src/components/social-follow/SocialFollow';
 import * as SocialFeed from 'src/components/social-feed/SocialFeed';
@@ -55,47 +89,46 @@ import * as ArticleDetails from 'src/components/article-details/ArticleDetails';
 import * as AllProductsCarousel from 'src/components/all-products-carousel/AllProductsCarousel';
 
 
-// Teamviewer components
-import * as TeamviewerHeader from 'src/components/teamviewer/teamviewerHeader';
-import * as TeamviewerFooter from 'src/components/teamviewer/teamviewerFooter';
-import * as AddOnCard from 'src/components/teamviewer/AddOnCard';
-import * as AddOnsSection from 'src/components/teamviewer/AddOnsSection';
-import * as BenefitCard from 'src/components/teamviewer/BenefitCard';
-import * as CTASection from 'src/components/teamviewer/CTASection';
-import * as ComparisonSection from 'src/components/teamviewer/ComparisonSection';
-import * as DiscoverSection from 'src/components/teamviewer/DiscoverSection';
-import * as EnterpriseFeatureCard from 'src/components/teamviewer/EnterpriseFeatureCard';
-import * as EnterpriseFeatureSection from 'src/components/teamviewer/EnterpriseFeatureSection';
-import * as FAQCard from 'src/components/teamviewer/FAQCard';
-import * as FAQSection from 'src/components/teamviewer/FAQSection';
-import * as FeaturesSection from 'src/components/teamviewer/FeaturesSection';
-import * as FeatureCard from 'src/components/teamviewer/FeatureCard';
-import * as FooterBottomLinkCard from 'src/components/teamviewer/FooterBottomLinkCard';
-import * as FooterCompact from 'src/components/teamviewer/FooterCompact';
-import * as FooterLinkCard from 'src/components/teamviewer/FooterLinkCard';
-import * as FooterLinkGroupCard from 'src/components/teamviewer/FooterLinkGroupCard';
-import * as HeaderActionCard from 'src/components/teamviewer/HeaderActionCard';
-import * as HeaderLogoCard from 'src/components/teamviewer/HeaderLogoCard';
-import * as HeroSection from 'src/components/teamviewer/HeroSection';
-import * as IndustryLeadersSection from 'src/components/teamviewer/IndustryLeadersSection';
-import * as IntegrationsSection from 'src/components/teamviewer/IntegrationsSection';
-import * as LogoCard from 'src/components/teamviewer/LogoCard';
-import * as NavigationCard from 'src/components/teamviewer/NavigationCard';
-import * as PricingCard from 'src/components/teamviewer/PricingCard';
-import * as PricingCardsSection from 'src/components/teamviewer/PricingCardsSection';
-import * as PricingHeroSection from 'src/components/teamviewer/PricingHeroSection';
-import * as ProactiveITSection from 'src/components/teamviewer/ProactiveITSection';
-import * as SecurityFeatureCard from 'src/components/teamviewer/SecurityFeatureCard';
-import * as SecuritySection from 'src/components/teamviewer/SecuritySection';
-import * as TestimonialCard from 'src/components/teamviewer/TestimonialCard';
-import * as TrustedLogosSection from 'src/components/teamviewer/TrustedLogosSection';
-
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCWrapper],
   ['FEaaSWrapper', FEaaSWrapper],
   ['Form', Form],
   ['Title', { ...Title }],
   ['ThemeEditor', { ...ThemeEditor }],
+  ['TrustedLogosSection', { ...TrustedLogosSection, componentType: 'client' }],
+  ['TestimonialCard', { ...TestimonialCard, componentType: 'client' }],
+  ['teamviewerHeader', { ...teamviewerHeader }],
+  ['teamviewerFooter', { ...teamviewerFooter }],
+  ['SecuritySection', { ...SecuritySection, componentType: 'client' }],
+  ['SecurityFeatureCard', { ...SecurityFeatureCard, componentType: 'client' }],
+  ['ProactiveITSection', { ...ProactiveITSection, componentType: 'client' }],
+  ['PricingHeroSection', { ...PricingHeroSection, componentType: 'client' }],
+  ['PricingCardsSection', { ...PricingCardsSection, componentType: 'client' }],
+  ['PricingCard', { ...PricingCard, componentType: 'client' }],
+  ['NavigationCard', { ...NavigationCard, componentType: 'client' }],
+  ['LogoCard', { ...LogoCard, componentType: 'client' }],
+  ['IntegrationsSection', { ...IntegrationsSection, componentType: 'client' }],
+  ['IndustryLeadersSection', { ...IndustryLeadersSection, componentType: 'client' }],
+  ['HeroSection', { ...HeroSection, componentType: 'client' }],
+  ['HeaderLogoCard', { ...HeaderLogoCard, componentType: 'client' }],
+  ['HeaderActionCard', { ...HeaderActionCard, componentType: 'client' }],
+  ['FooterLinkGroupCard', { ...FooterLinkGroupCard, componentType: 'client' }],
+  ['FooterLinkCard', { ...FooterLinkCard, componentType: 'client' }],
+  ['FooterCompact', { ...FooterCompact, componentType: 'client' }],
+  ['FooterBottomLinkCard', { ...FooterBottomLinkCard, componentType: 'client' }],
+  ['FeaturesSection', { ...FeaturesSection, componentType: 'client' }],
+  ['FeatureCard', { ...FeatureCard, componentType: 'client' }],
+  ['FAQSection', { ...FAQSection, componentType: 'client' }],
+  ['FAQCard', { ...FAQCard, componentType: 'client' }],
+  ['EnterpriseFeatureSection', { ...EnterpriseFeatureSection, componentType: 'client' }],
+  ['EnterpriseFeatureCard', { ...EnterpriseFeatureCard, componentType: 'client' }],
+  ['DiscoverSection', { ...DiscoverSection, componentType: 'client' }],
+  ['CTASection', { ...CTASection, componentType: 'client' }],
+  ['ComparisonSection', { ...ComparisonSection, componentType: 'client' }],
+  ['BenefitCard', { ...BenefitCard, componentType: 'client' }],
+  ['AddOnsSection', { ...AddOnsSection, componentType: 'client' }],
+  ['AddOnCardHighlight', { ...AddOnCardHighlight, componentType: 'client' }],
+  ['AddOnCard', { ...AddOnCard, componentType: 'client' }],
   ['Subscribe', { ...Subscribe }],
   ['SocialFollow', { ...SocialFollow }],
   ['SocialFeed', { ...SocialFeed }],
@@ -143,39 +176,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleListing', { ...ArticleListing }],
   ['ArticleDetails', { ...ArticleDetails }],
   ['AllProductsCarousel', { ...AllProductsCarousel }],
-  ['teamviewerHeader', { ...TeamviewerHeader }],
-  ['teamviewerFooter', { ...TeamviewerFooter }],
-  ['AddOnCard', { ...AddOnCard }],
-  ['AddOnsSection', { ...AddOnsSection }],
-  ['ComparisonSection', { ...ComparisonSection }],
-  ['DiscoverSection', { ...DiscoverSection }],
-  ['EnterpriseFeatureCard', { ...EnterpriseFeatureCard }],
-  ['EnterpriseFeatureSection', { ...EnterpriseFeatureSection }],
-  ['FAQCard', { ...FAQCard }],
-  ['FAQSection', { ...FAQSection }],
-  ['FeaturesSection', { ...FeaturesSection }],
-  ['FeatureCard', { ...FeatureCard }],
-  ['FooterBottomLinkCard', { ...FooterBottomLinkCard }],
-  ['FooterCompact', { ...FooterCompact }],
-  ['FooterLinkCard', { ...FooterLinkCard }],
-  ['FooterLinkGroupCard', { ...FooterLinkGroupCard }],
-  ['HeaderActionCard', { ...HeaderActionCard }],
-  ['HeaderLogoCard', { ...HeaderLogoCard }],
-  ['HeroSection', { ...HeroSection }],
-  ['IndustryLeadersSection', { ...IndustryLeadersSection }],
-  ['IntegrationsSection', { ...IntegrationsSection }],
-  ['LogoCard', { ...LogoCard }],
-  ['NavigationCard', { ...NavigationCard }],
-  ['PricingCard', { ...PricingCard }],
-  ['PricingHeroSection', { ...PricingHeroSection }],
-  ['PricingCardsSection', { ...PricingCardsSection }],
-  ['ProactiveITSection', { ...ProactiveITSection }],
-  ['SecurityFeatureCard', { ...SecurityFeatureCard }],
-  ['SecuritySection', { ...SecuritySection }],
-  ['TestimonialCard', { ...TestimonialCard }],
-  ['TrustedLogosSection', { ...TrustedLogosSection }],
-  ['BenefitCard', { ...BenefitCard }],
-  ['CTASection', { ...CTASection }],
+  ['AddOnCardHighlight', { ...AddOnCardHighlight }],
 ]);
 
 export default componentMap;

@@ -1,55 +1,60 @@
 'use client';
 
-import React, { JSX } from 'react';
+import type { JSX } from 'react';
 import {
   TextField,
-  RichTextField,
-  ImageField,
   Text,
+  RichTextField,
   RichText,
-  Link as JssLink,
+  ImageField,
+  Image as SitecoreImage,
   LinkField,
-  Image as JssImage,
+  Link as SitecoreLink,
+  Placeholder,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
+/**
+ * AddOnCard Component
+ * An add-on product card for the pricing page.
+ *
+ * Layout:
+ * - Green "30-DAY FREE TRIAL" badge positioned overlapping the top-left card border
+ * - Rounded illustration image area with light background
+ * - Bold heading, gray description text
+ * - Placeholder for HighlightItemCard children (checkmark list items)
+ * - Optional CTA link at the bottom
+ *
+ * Responsive:
+ * - Full width within its grid cell on all breakpoints
+ */
+
 interface Fields {
-  badge: TextField;
-  image: ImageField;
-  heading: TextField;
-  description: RichTextField;
-  features: RichTextField;
-  ctaText: TextField;
-  ctaLink: LinkField;
-  backgroundColor: TextField;
+  Badge: TextField;
+  Image: ImageField;
+  Heading: TextField;
+  Description: RichTextField;
+  CTAText: TextField;
+  CTALink: LinkField;
 }
 
 const defaultFields: Fields = {
-  badge: { value: 'ADD-ON TO PREMIUM' },
-  image: {
+  Badge: { value: '30-DAY FREE TRIAL' },
+  Image: {
     value: {
-      src: 'https://via.placeholder.com/200x120',
+      src: 'https://placehold.co/400x200/f0f4ff/6366f1?text=Add-On',
       alt: 'Add-on illustration',
+      width: '400',
+      height: '200',
     },
   },
-  heading: { value: 'Asset Management' },
-  description: {
+  Heading: { value: 'Asset Management' },
+  Description: {
     value:
-      'Provision and manage single device, assets and warranties across your network. Benefit from:',
+      '<p>Discover and manage every single device, pieces of software, and hidden asset on your network. Benefit from:</p>',
   },
-  features: {
-    value: `
-      <ul>
-        <li>Asset management and dashboards</li>
-        <li>Asset discovery and inventory</li>
-        <li>Remote management and provisioning</li>
-        <li>In-depth insights and reporting</li>
-      </ul>
-    `,
-  },
-  ctaText: { value: 'Learn more' },
-  ctaLink: { value: { href: '#' } },
-  backgroundColor: { value: '#f0fdf4' },
+  CTAText: { value: 'Learn more' },
+  CTALink: { value: { href: '#' } },
 };
 
 export type AddOnCardProps = ComponentProps & {
@@ -57,105 +62,78 @@ export type AddOnCardProps = ComponentProps & {
 };
 
 export const Default = (props: AddOnCardProps): JSX.Element => {
+  const id = props.params?.RenderingIdentifier;
+  const styles = props.params?.styles || '';
+  const { DynamicPlaceholderId } = props.params || {};
   const fields = props.fields || defaultFields;
-  const bgColor = fields.backgroundColor?.value || '#f0fdf4';
+
+  const phHighlightItems = `highlight-items-${DynamicPlaceholderId || '1'}`;
 
   return (
-    <div
-      style={{
-        backgroundColor: '#ffffff',
-        border: '2px solid #e5e7eb',
-        borderRadius: '12px',
-        overflow: 'hidden',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      {fields.badge?.value && (
+    <div className={`component add-on-card ${styles}`} id={id}>
+      {/* Wrapper with relative positioning for the badge overlap */}
+      <div className="relative pt-3">
+        {/* Badge - overlaps the card top-left */}
+        {fields.Badge?.value && (
+          <div
+            className="absolute top-0 left-4 z-10 rounded px-3 py-1 text-xs font-bold tracking-wide text-white uppercase"
+            style={{ backgroundColor: '#1a8a3f' }}
+          >
+            <Text field={fields.Badge} />
+          </div>
+        )}
+
+        {/* Card */}
         <div
-          style={{
-            backgroundColor: '#10b981',
-            color: '#ffffff',
-            fontSize: '0.75rem',
-            fontWeight: '700',
-            padding: '0.5rem 1rem',
-            textAlign: 'center',
-          }}
+          className="flex h-full flex-col overflow-hidden rounded-xl"
+          style={{ border: '1px solid #e0e0e0', backgroundColor: '#ffffff' }}
         >
-          <Text field={fields.badge} />
+          {/* Image area */}
+          <div
+            className="flex items-center justify-center px-5 py-6"
+            style={{ backgroundColor: '#f0f4ff', minHeight: '160px' }}
+          >
+            <SitecoreImage field={fields.Image} className="max-h-32 w-auto object-contain" />
+          </div>
+
+          {/* Content area */}
+          <div className="flex flex-1 flex-col px-5 pt-5 pb-6">
+            {/* Heading */}
+            <h3 className="mb-2 text-base font-bold" style={{ color: '#0d1b3e' }}>
+              <Text field={fields.Heading} />
+            </h3>
+
+            {/* Description */}
+            <div className="mb-3 text-sm leading-relaxed text-gray-500">
+              <RichText field={fields.Description} />
+            </div>
+
+            {/* Highlight items placeholder */}
+            <div className="mb-4">
+              <Placeholder name={phHighlightItems} rendering={props.rendering} />
+            </div>
+
+            {/* CTA link (optional) */}
+            {fields.CTALink?.value?.href && (
+              <div className="mt-auto">
+                <SitecoreLink
+                  field={fields.CTALink}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                >
+                  <Text field={fields.CTAText} />
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2.5}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </SitecoreLink>
+              </div>
+            )}
+          </div>
         </div>
-      )}
-
-      <div
-        style={{
-          backgroundColor: bgColor as string,
-          padding: '2rem',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '150px',
-        }}
-      >
-        <JssImage field={fields.image} style={{ maxWidth: '100%', height: 'auto' }} />
-      </div>
-
-      <div
-        style={{
-          padding: '1.5rem',
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
-        <h3
-          style={{
-            fontSize: '1.25rem',
-            fontWeight: '700',
-            color: '#001840',
-            marginBottom: '0.75rem',
-          }}
-        >
-          <Text field={fields.heading} />
-        </h3>
-
-        <p
-          style={{
-            fontSize: '0.875rem',
-            color: '#5a6c7d',
-            marginBottom: '1rem',
-            lineHeight: '1.6',
-          }}
-        >
-          <Text field={fields.description} />
-        </p>
-
-        <div
-          style={{
-            fontSize: '0.875rem',
-            color: '#001840',
-            marginBottom: '1.5rem',
-          }}
-        >
-          <RichText field={fields.features} />
-        </div>
-
-        <JssLink
-          field={fields.ctaLink}
-          style={{
-            color: '#3251FF',
-            fontSize: '0.875rem',
-            fontWeight: '600',
-            textDecoration: 'none',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            marginTop: 'auto',
-          }}
-        >
-          <Text field={fields.ctaText} />
-          <span>→</span>
-        </JssLink>
       </div>
     </div>
   );

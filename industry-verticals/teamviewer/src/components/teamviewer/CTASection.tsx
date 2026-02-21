@@ -21,7 +21,8 @@ interface Fields {
 const defaultFields: Fields = {
   Heading: { value: "Let's find the right solution for your business" },
   Description: {
-    value: '<p>Connect with one of our customer success specialists and start defining your TeamViewer setup.</p>',
+    value:
+      '<p>Connect with one of our customer success specialists and start defining your TeamViewer setup.</p>',
   },
   ButtonText: { value: 'Get in touch' },
   ButtonLink: { value: { href: '#contact' } },
