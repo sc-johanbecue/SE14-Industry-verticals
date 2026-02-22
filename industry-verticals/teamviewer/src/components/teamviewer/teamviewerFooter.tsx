@@ -88,7 +88,6 @@ export const Default = (props: FooterProps) => {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {sections.map(({ key, title, phKey }) => (
             <div key={key}>
-
               <div className="flex flex-col gap-2 text-sm">
                 <Placeholder name={phKey} rendering={props.rendering} />
               </div>
