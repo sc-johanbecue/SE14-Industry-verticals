@@ -1,7 +1,13 @@
 'use client';
 
 import React, { useState, type JSX } from 'react';
-import { TextField, Text, LinkField, Link as SitecoreLink } from '@sitecore-content-sdk/nextjs';
+import {
+  Field,
+  TextField,
+  Text,
+  LinkField,
+  Link as SitecoreLink,
+} from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
 /**
@@ -29,8 +35,8 @@ interface PricingAttribute {
   fields: {
     Text: TextField;
     Sublabel: TextField;
-    Included: TextField; // boolean as string
-    IsBold: TextField; // boolean as string
+    Included: Field<boolean>; // boolean as string
+    IsBold: Field<boolean>; // boolean as string
   };
 }
 
@@ -39,7 +45,7 @@ interface PricingOption {
     Label: TextField;
     Sublabel: TextField;
     Badge: TextField;
-    Checked: TextField; // boolean as string
+    Checked: Field<boolean>; // boolean as string
   };
 }
 
@@ -86,96 +92,96 @@ const defaultFields: Fields = {
       fields: {
         Text: { value: '15 licensed users' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: '1 concurrent connection (channel)' },
         Sublabel: { value: 'Up to 10 concurrent sessions per channel (in tabs)' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: '300 managed devices' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Phone support (in 33 languages)' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'true' },
+        Included: { value: true },
+        IsBold: { value: true },
       },
     },
     {
       fields: {
         Text: { value: 'TeamViewer AI' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Google Meet integration' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Unlimited devices to connect to' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Unlimited devices to connect from' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Outgoing connection reporting' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Mobile device support (add-on)' },
         Sublabel: { value: '' },
-        Included: { value: 'true' },
-        IsBold: { value: 'false' },
+        Included: { value: true },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Incoming connection reporting' },
         Sublabel: { value: '' },
-        Included: { value: 'false' },
-        IsBold: { value: 'false' },
+        Included: { value: false },
+        IsBold: { value: false },
       },
     },
     {
       fields: {
         Text: { value: 'Mass deployment' },
         Sublabel: { value: '' },
-        Included: { value: 'false' },
-        IsBold: { value: 'false' },
+        Included: { value: false },
+        IsBold: { value: false },
       },
     },
     {
@@ -185,8 +191,8 @@ const defaultFields: Fields = {
             'Standard Integrations Package (add-on including ServiceNow, Freshworks, Zendesk, Jamf, Miradore, and others)',
         },
         Sublabel: { value: '' },
-        Included: { value: 'false' },
-        IsBold: { value: 'false' },
+        Included: { value: false },
+        IsBold: { value: false },
       },
     },
   ],
@@ -196,7 +202,7 @@ const defaultFields: Fields = {
         Label: { value: 'DEX Essentials' },
         Sublabel: { value: 'Proactively identify and fix IT issues' },
         Badge: { value: '30-DAY FREE TRIAL' },
-        Checked: { value: 'false' },
+        Checked: { value: false },
       },
     },
     {
@@ -204,7 +210,7 @@ const defaultFields: Fields = {
         Label: { value: 'Support for mobile devices' },
         Sublabel: { value: '' },
         Badge: { value: '' },
-        Checked: { value: 'false' },
+        Checked: { value: false },
       },
     },
   ],
@@ -267,6 +273,9 @@ export const Default = (props: PricingCardProps): JSX.Element => {
           {/* Original price (strikethrough) */}
           {fields.OriginalPrice?.value && (
             <p className="text-sm font-semibold line-through" style={{ color: '#d64545' }}>
+              <span className="text-lg font-medium">
+                <Text field={fields.Currency} />
+              </span>
               <Text field={fields.OriginalPrice} />
             </p>
           )}
@@ -318,7 +327,7 @@ export const Default = (props: PricingCardProps): JSX.Element => {
                 const label = option.fields.Label?.value || '';
                 const sublabel = option.fields.Sublabel?.value || '';
                 const badge = option.fields.Badge?.value || '';
-                const checked = option.fields.Checked?.value === 'true';
+                const checked = option.fields.Checked;
 
                 return (
                   <div
@@ -378,8 +387,8 @@ export const Default = (props: PricingCardProps): JSX.Element => {
               {attributes.map((attr, idx) => {
                 const text = attr.fields.Text?.value || '';
                 const sublabel = attr.fields.Sublabel?.value || '';
-                const included = attr.fields.Included?.value === 'true';
-                const isBold = attr.fields.IsBold?.value === 'true';
+                const included = attr.fields.Included?.value || false;
+                const isBold = attr.fields.IsBold?.value || false;
 
                 return (
                   <div key={idx} className="flex items-start gap-3">
