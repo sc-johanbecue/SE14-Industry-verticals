@@ -13,8 +13,8 @@ import * as teamviewerFooter from 'src/components/teamviewer/teamviewerFooter';
 import * as SecuritySection from 'src/components/teamviewer/SecuritySection';
 import * as SecurityFeatureCard from 'src/components/teamviewer/SecurityFeatureCard';
 import * as ProactiveITSection from 'src/components/teamviewer/ProactiveITSection';
-import * as PricingHeroSection from 'src/components/teamviewer/PricingHeroSection';
-import * as PricingCardsSection from 'src/components/teamviewer/PricingCardsSection';
+import * as PricingTab from 'src/components/teamviewer/PricingTab';
+import * as PricingSection from 'src/components/teamviewer/PricingSection';
 import * as PricingCard from 'src/components/teamviewer/PricingCard';
 import * as NavigationCard from 'src/components/teamviewer/NavigationCard';
 import * as LogoCard from 'src/components/teamviewer/LogoCard';
@@ -88,7 +88,6 @@ import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleDetails from 'src/components/article-details/ArticleDetails';
 import * as AllProductsCarousel from 'src/components/all-products-carousel/AllProductsCarousel';
 
-
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCWrapper],
   ['FEaaSWrapper', FEaaSWrapper],
@@ -102,8 +101,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SecuritySection', { ...SecuritySection, componentType: 'client' }],
   ['SecurityFeatureCard', { ...SecurityFeatureCard, componentType: 'client' }],
   ['ProactiveITSection', { ...ProactiveITSection, componentType: 'client' }],
-  ['PricingHeroSection', { ...PricingHeroSection, componentType: 'client' }],
-  ['PricingCardsSection', { ...PricingCardsSection, componentType: 'client' }],
+  ['PricingTab', { ...PricingTab, componentType: 'client' }],
+  ['PricingSection', { ...PricingSection, componentType: 'client' }],
   ['PricingCard', { ...PricingCard, componentType: 'client' }],
   ['NavigationCard', { ...NavigationCard, componentType: 'client' }],
   ['LogoCard', { ...LogoCard, componentType: 'client' }],
@@ -176,7 +175,6 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleListing', { ...ArticleListing }],
   ['ArticleDetails', { ...ArticleDetails }],
   ['AllProductsCarousel', { ...AllProductsCarousel }],
-  ['AddOnCardHighlight', { ...AddOnCardHighlight }],
 ]);
 
 export default componentMap;
