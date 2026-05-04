@@ -1,0 +1,52 @@
+﻿---
+ID: "7d84a577-79c6-448d-be5a-3d9ef2d959b5"
+Parent: "ccc0d602-dce7-4894-b407-7db17dda8554"
+Template: "f6e84ac9-83ec-4d80-aa1e-4fd3c63597d5"
+Path: "/sitecore/content/bupa/bupa-uk/Data/LinkBoxCards/Free health information"
+SharedFields:
+- ID: "0af172fb-d4e2-4e31-a703-0d54eaa566cb"
+  Hint: Icon
+  Value: |
+    <image mediaid="87ca61a7-ebe4-450c-b1ab-1c7ed834bede" />
+- ID: "777e7642-e364-4859-87d7-4f9e307e6998"
+  Hint: Link1
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="A-Z of conditions and treatments" title="Home"/>
+- ID: "ca1c9ed9-1fc9-4157-80ee-e6aca11bc2d5"
+  Hint: Link2
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="Visit our health blog" title="Home"/>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "151bd069-4335-4081-b5a7-c64e96d173a4"
+- ID: "f521b748-e1b3-439b-9b42-d5089f2e5450"
+  Hint: Cta
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="Find information on health" title="Home"/>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T145355Z
+    - ID: "6b06a95d-cc44-4cb4-af9c-5a50b306ee5b"
+      Hint: Description
+      Value: The more you know, the more you can do. Explore our library of conditions, treatment and healthy living.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "552c1fdc-cc7a-4453-8b02-52a3c41acf24"
+    - ID: "a6eaca1c-33d9-43fd-82a8-5ed115b8bc3f"
+      Hint: Title
+      Value: Free health information
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T145457Z

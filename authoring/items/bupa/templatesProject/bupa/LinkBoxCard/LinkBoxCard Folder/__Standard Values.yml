@@ -1,0 +1,36 @@
+﻿---
+ID: "f8777b71-3a3d-4dbf-ac2e-18fcd888c569"
+Parent: "aa4496a9-e738-4b56-b13b-b6b012e9b1cd"
+Template: "aa4496a9-e738-4b56-b13b-b6b012e9b1cd"
+Path: /sitecore/templates/Project/bupa/LinkBoxCard/LinkBoxCard Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {F6E84AC9-83EC-4D80-AA1E-4FD3C63597D5}
+    {AA4496A9-E738-4B56-B13B-B6B012E9B1CD}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "42b664f8-61db-4775-be2e-afd1a9b65b74"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9914655-b389-4bb9-8b99-8fa9dfb78255"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T105601Z

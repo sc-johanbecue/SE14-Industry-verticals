@@ -1,0 +1,40 @@
+﻿---
+ID: "01cf3c3f-ac9e-4fc3-9682-d8d596b08b63"
+Parent: "ad01c86f-2358-4ecb-975e-0bf32b7f495a"
+Template: "ad01c86f-2358-4ecb-975e-0bf32b7f495a"
+Path: /sitecore/templates/Project/bupa/Partial Designs/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {6D9490A2-E110-45D9-8B5B-7C378B2421D7}
+    {FD2059FD-6043-4DFE-8C04-E2437CE87634}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0d316c2a-da50-4181-952c-10628251bed5"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T091809Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "75f4bf51-68e2-4a6e-be73-87f9ef5fd0ef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T091815Z

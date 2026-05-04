@@ -1,0 +1,60 @@
+﻿---
+ID: "d83c5cd1-94df-44e0-8493-346dde8d9435"
+Parent: "8a069222-f452-42ad-b727-e211461446bf"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/bupa/bupa-uk/Website/imgi_42_bupa-logo"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/D83C5CD194DF44E08493346DDE8D9435.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 40
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "8c343bb0-e006-447a-b6f3-982a4ee9f11c"
+  Value: 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
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1666
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 40 x 40
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5a3e60d2-3419-4dce-b8a3-43a2491e229c"
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 40
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T143932Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c02a091b-6bc9-45a4-a2ff-de280fe798bc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T143932Z

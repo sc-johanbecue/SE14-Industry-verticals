@@ -1,0 +1,32 @@
+﻿---
+ID: "46d28796-7b88-4c70-bafc-0d6ad63e4986"
+Parent: "7ae3b39e-3673-4428-be38-70dcbb6f34ed"
+Template: "391b75a3-65ed-4bcb-9d8a-3df8926adf65"
+Path: "/sitecore/content/bupa/bupa-uk/Data/LinkBoxSections/What can we help you with today"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T093501Z
+    - ID: "2d21a962-2728-4ee6-99a3-ee5fa88579e1"
+      Hint: Title
+      Value: "What can we help you with today?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "588ea73c-cc9d-4387-9747-8245e25aec5b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T145515Z
+    - ID: "f4c23312-d6dd-46bd-a6b4-edd39cddaa90"
+      Hint: Subtitle
+      Value: "Health cover, care and everything in-between so you spend less time waiting and more time living."

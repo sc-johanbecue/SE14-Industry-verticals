@@ -1,0 +1,51 @@
+﻿---
+ID: "de226b5d-7d57-44b5-9096-a433a140aa6a"
+Parent: "8a069222-f452-42ad-b727-e211461446bf"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/bupa/bupa-uk/Website/imgi_57_default"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/DE226B5D7D5744B59096A433A140AA6A.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4d696293-015e-4385-9650-c7a6e7bfa1d7"
+  Value: PHN2ZyByb2xlPSJwcmVzZW50YXRpb24iIGFyaWEtaGlkZGVuPSJ0cnVlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQwMi41NzcgNDAyLjU3NyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRpdGxlPkZpbHRlciBJY29uPC90aXRsZT48Zz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDAwLjg1OCwxMS40MjdjLTMuMjQxLTcuNDIxLTguODUtMTEuMTMyLTE2Ljg1NC0xMS4xMzZIMTguNTY0Yy03Ljk5MywwLTEzLjYxLDMuNzE1LTE2Ljg0NiwxMS4xMzYKICAgICAgYy0zLjIzNCw3LjgwMS0xLjkwMywxNC40NjcsMy45OTksMTkuOTg1bDE0MC43NTcsMTQwLjc1M3YxMzguNzU1YzAsNC45NTUsMS44MDksOS4yMzIsNS40MjQsMTIuODU0bDczLjA4NSw3My4wODMKICAgICAgYzMuNDI5LDMuNjE0LDcuNzEsNS40MjgsMTIuODUxLDUuNDI4YzIuMjgyLDAsNC42Ni0wLjQ3OSw3LjEzNS0xLjQzYzcuNDI2LTMuMjM4LDExLjE0LTguODUxLDExLjE0LTE2Ljg0NVYxNzIuMTY2TDM5Ni44NjEsMzEuNDEzCiAgICAgIEM0MDIuNzY1LDI1Ljg5NSw0MDQuMDkzLDE5LjIzMSw0MDAuODU4LDExLjQyN3oiPjwvcGF0aD48L2c+PC9zdmc+
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 657
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b04521df-48bd-4cb3-aa7b-9b29d8903e0e"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T143927Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21786fa7-54e2-4541-8f87-0210d3d21386"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T143927Z

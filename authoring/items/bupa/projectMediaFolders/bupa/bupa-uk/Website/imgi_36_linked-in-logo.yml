@@ -1,0 +1,51 @@
+﻿---
+ID: "fd46a49a-7e00-4b76-8778-8ae23f6358df"
+Parent: "8a069222-f452-42ad-b727-e211461446bf"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/bupa/bupa-uk/Website/imgi_36_linked-in-logo"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/FD46A49A7E004B7687788AE23F6358DF.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4f8ad86d-6bd0-4462-a94c-0dc5bfd7dc89"
+  Value: PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzJfNzYpIj4KPHBhdGggZD0iTTMzLjMzNDYgMS4zMzMzM0g2LjY2NTQyQzMuNzIwNTkgMS4zMzMzMyAxLjMzMzMzIDMuNzIwNTkgMS4zMzMzMyA2LjY2NTQyVjMzLjMzNDZDMS4zMzMzMyAzNi4yNzk0IDMuNzIwNTkgMzguNjY2NyA2LjY2NTQyIDM4LjY2NjdIMzMuMzM0NkMzNi4yNzk0IDM4LjY2NjcgMzguNjY2NyAzNi4yNzk0IDM4LjY2NjcgMzMuMzM0NlY2LjY2NTQyQzM4LjY2NjcgMy43MjA1OSAzNi4yNzk0IDEuMzMzMzMgMzMuMzM0NiAxLjMzMzMzWiIgZmlsbD0iIzBBNjZDMSIvPgo8cGF0aCBkPSJNMzMuMTQyOCAzMi45ODNIMjcuNjEwMlYyNC4zMjA5QzI3LjYxMDIgMjIuMjU0OSAyNy41NzI0IDE5LjU5NjEgMjQuNzMzNSAxOS41OTYxQzIxLjg5NDYgMTkuNTk2MSAyMS40MTIyIDIxLjg0ODEgMjEuNDEyMiAyNC4xNjk4VjMyLjk4M0gxNS44Nzk2VjE1LjE2NzdIMjEuMTkxNFYxNy42MDI3SDIxLjI2NjlDMjIuMzUwOCAxNS43NTE4IDI0LjM2NDUgMTQuNjQ0NyAyNi41MDYgMTQuNzI2QzMyLjExMTMgMTQuNzI2IDMzLjE0NTcgMTguNDEzNSAzMy4xNDU3IDIzLjIxMDlWMzIuOTgzSDMzLjE0MjhaTTkuNjQwOTMgMTIuNzMyN0M3Ljg2ODQxIDEyLjczMjcgNi40MzAwNSAxMS4yOTcyIDYuNDMwMDUgOS41MjE3OUM2LjQzMDA1IDcuNzQ5MjggNy44NjU1IDYuMzEwOTIgOS42NDA5MyA2LjMxMDkyQzExLjQxMzQgNi4zMTA5MiAxMi44NTE4IDcuNzQ2MzcgMTIuODUxOCA5LjUyMTc5QzEyLjg1MTggMTEuMjk0MyAxMS40MTY0IDEyLjczMjcgOS42NDA5MyAxMi43MzI3Wk0xMi40MDQzIDMyLjk4M0g2Ljg2NTkyVjE1LjE2NzdIMTIuNDA0M1YzMi45ODNaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzJfNzYiPgo8cmVjdCB3aWR0aD0iMzcuMzMzMyIgaGVpZ2h0PSIzNy4zMzMzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4zMzMzMyAxLjMzMzMzKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1121
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8fe97d29-77ee-4722-99b6-93b88a63d39f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T143933Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0dfde312-6b4b-48cf-aaeb-7834f8d43e04"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T143933Z

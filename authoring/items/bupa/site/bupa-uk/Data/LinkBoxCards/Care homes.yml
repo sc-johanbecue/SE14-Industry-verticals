@@ -1,0 +1,52 @@
+﻿---
+ID: "829aeeea-b57b-463f-889d-e699551e308d"
+Parent: "ccc0d602-dce7-4894-b407-7db17dda8554"
+Template: "f6e84ac9-83ec-4d80-aa1e-4fd3c63597d5"
+Path: "/sitecore/content/bupa/bupa-uk/Data/LinkBoxCards/Care homes"
+SharedFields:
+- ID: "0af172fb-d4e2-4e31-a703-0d54eaa566cb"
+  Hint: Icon
+  Value: |
+    <image mediaid="02f9975d-5375-4984-b775-c1dedde3db87" />
+- ID: "777e7642-e364-4859-87d7-4f9e307e6998"
+  Hint: Link1
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="What type of care do I need?" title="Home"/>
+- ID: "ca1c9ed9-1fc9-4157-80ee-e6aca11bc2d5"
+  Hint: Link2
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="Care home costs" title="Home"/>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0dd13116-02fa-4c1e-bfe4-9f5b5f56e21c"
+- ID: "f521b748-e1b3-439b-9b42-d5089f2e5450"
+  Hint: Cta
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="More on Bupa care services" title="Home"/>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T110052Z
+    - ID: "6b06a95d-cc44-4cb4-af9c-5a50b306ee5b"
+      Hint: Description
+      Value: It's more than choosing a care home... it's emotional support, having your needs met, and a good quality of life.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a141941a-a6b7-4a54-bc34-05aa70cb4971"
+    - ID: "a6eaca1c-33d9-43fd-82a8-5ed115b8bc3f"
+      Hint: Title
+      Value: Care homes
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T145331Z

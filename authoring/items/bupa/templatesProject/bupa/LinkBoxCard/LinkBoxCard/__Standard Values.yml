@@ -1,0 +1,50 @@
+﻿---
+ID: "4b6da10c-99c8-4107-96b2-a61a337be74f"
+Parent: "f6e84ac9-83ec-4d80-aa1e-4fd3c63597d5"
+Template: "f6e84ac9-83ec-4d80-aa1e-4fd3c63597d5"
+Path: /sitecore/templates/Project/bupa/LinkBoxCard/LinkBoxCard/__Standard Values
+SharedFields:
+- ID: "777e7642-e364-4859-87d7-4f9e307e6998"
+  Hint: Link1
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="Home" target="_blank" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
+- ID: "ca1c9ed9-1fc9-4157-80ee-e6aca11bc2d5"
+  Hint: Link2
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="Home" target="_blank" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "eb5bb675-a47f-4990-94f2-808218a74492"
+- ID: "f521b748-e1b3-439b-9b42-d5089f2e5450"
+  Hint: Cta
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="Home" target="_blank" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260220T134639Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8e614188-d741-4178-99ac-5da8b0d571d2"
+    - ID: "a6eaca1c-33d9-43fd-82a8-5ed115b8bc3f"
+      Hint: Title
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T142951Z

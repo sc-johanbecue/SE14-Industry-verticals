@@ -1,0 +1,52 @@
+﻿---
+ID: "852f612f-71ca-4f7f-b20a-8d4a32ca5fa7"
+Parent: "ccc0d602-dce7-4894-b407-7db17dda8554"
+Template: "f6e84ac9-83ec-4d80-aa1e-4fd3c63597d5"
+Path: "/sitecore/content/bupa/bupa-uk/Data/LinkBoxCards/Health insurance"
+SharedFields:
+- ID: "0af172fb-d4e2-4e31-a703-0d54eaa566cb"
+  Hint: Icon
+  Value: |
+    <image mediaid="8f0ca80e-16ff-44cd-9372-898b5d614f27" />
+- ID: "777e7642-e364-4859-87d7-4f9e307e6998"
+  Hint: Link1
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="What is health insurance?" title="Home"/>
+- ID: "ca1c9ed9-1fc9-4157-80ee-e6aca11bc2d5"
+  Hint: Link2
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="What does health insurance cost?" title="Home"/>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2688fd8b-2285-45d4-b9c0-5eec294cf48b"
+- ID: "f521b748-e1b3-439b-9b42-d5089f2e5450"
+  Hint: Cta
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="_blank" class="" text="Get an insurance quote" title="Home"/>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T143149Z
+    - ID: "6b06a95d-cc44-4cb4-af9c-5a50b306ee5b"
+      Hint: Description
+      Value: Feel confident building health insurance around your budget. Get flexible insurance to cover you, your partner and family members.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c33f2c27-5ea9-4d29-968e-ac154f8d3f2a"
+    - ID: "a6eaca1c-33d9-43fd-82a8-5ed115b8bc3f"
+      Hint: Title
+      Value: Health insurance
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T144525Z

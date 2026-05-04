@@ -1,0 +1,51 @@
+﻿---
+ID: "6eb40437-9c1f-455c-b172-872a8e1ceb34"
+Parent: "8a069222-f452-42ad-b727-e211461446bf"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/bupa/bupa-uk/Website/imgi_38_twitter-logo"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/6EB404379C1F455CB172872A8E1CEB34.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4ae043b4-0b94-44b6-b553-c79d5e831d24"
+  Value: PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzIwNzlfMTg3KSI+CjxwYXRoIGQ9Ik0yNS41IDI5SDQuNUMyLjU2OCAyOSAxIDI3LjQzMiAxIDI1LjVWNC41QzEgMi41NjggMi41NjggMSA0LjUgMUgyNS41QzI3LjQzMiAxIDI5IDIuNTY4IDI5IDQuNVYyNS41QzI5IDI3LjQzMiAyNy40MzIgMjkgMjUuNSAyOVoiIGZpbGw9ImJsYWNrIi8+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8yMDc5XzE4NykiPgo8cGF0aCBkPSJNMTYuNTIyMiAxMy4xOTQ2TDIyLjQ3ODUgNkgyMS4wNjcxTDE1Ljg5NTIgMTIuMjQ3TDExLjc2NDQgNkg3TDEzLjI0NjYgMTUuNDQ2Nkw3IDIyLjk5MTNIOC40MTE1NUwxMy44NzMyIDE2LjM5NDJMMTguMjM1NiAyMi45OTEzSDIzTDE2LjUyMTggMTMuMTk0NkgxNi41MjIyWk0xNC41ODg5IDE1LjUyOThMMTMuOTU2IDE0LjU4OTFMOC45MjAxNSA3LjEwNDE2SDExLjA4ODJMMTUuMTUyMiAxMy4xNDQ4TDE1Ljc4NTEgMTQuMDg1NEwyMS4wNjc3IDIxLjkzNzNIMTguODk5N0wxNC41ODg5IDE1LjUzMDJWMTUuNTI5OFoiIGZpbGw9IndoaXRlIi8+CjwvZz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8yMDc5XzE4NyI+CjxyZWN0IHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMV8yMDc5XzE4NyI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcgNikiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 900
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f4786ade-43fc-4ceb-8763-42d849f02209"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T143933Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e8765097-6253-4eab-b3d0-6c86ca5b4b4c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T143933Z

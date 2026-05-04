@@ -2,46 +2,46 @@
     "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
     "namespace": "Project",
     "items": {
-      "path": "Lenovo",
+      "path": "bupa",
       "includes": [
         {
             "name": "templatesProject",
-            "path": "/sitecore/templates/Project/lenovo",
+            "path": "/sitecore/templates/Project/bupa",
             "allowedPushOperations": "CreateUpdateAndDelete",
             "scope": "ItemAndDescendants"
         },
         {
             "name": "branchesProject",
-            "path": "/sitecore/templates/Branches/Project/lenovo",
+            "path": "/sitecore/templates/Branches/Project/bupa",
             "allowedPushOperations": "CreateUpdateAndDelete",
             "scope": "ItemAndDescendants"
         },
         {
           "name": "projectMediaFolders",
-          "path": "/sitecore/Media Library/Project/lenovo",
+          "path": "/sitecore/Media Library/Project/bupa",
           "scope": "ItemAndDescendants"
         },
         {
           "name": "projectRenderings",
-          "path": "/sitecore/Layout/Renderings/Project/lenovo",
+          "path": "/sitecore/Layout/Renderings/Project/bupa",
           "allowedPushOperations": "CreateUpdateAndDelete",
           "scope": "ItemAndDescendants"
         },
         {
           "name": "projectPlaceholderSettings",
-          "path": "/sitecore/Layout/Placeholder Settings/Project/lenovo",
+          "path": "/sitecore/Layout/Placeholder Settings/Project/bupa",
           "allowedPushOperations": "CreateUpdateAndDelete",
           "scope": "ItemAndDescendants"
         },
         {
           "name": "tenantRoot",
-          "path": "/sitecore/content/lenovo",
+          "path": "/sitecore/content/bupa",
           "scope": "SingleItem",
           "allowedPushOperations": "CreateAndUpdate"
         },
         {
           "name": "site",
-          "path": "/sitecore/content/lenovo/lenovo-partner-hub",
+          "path": "/sitecore/content/bupa/bupa-uk",
           "rules": [
             {
               "path": "/home",

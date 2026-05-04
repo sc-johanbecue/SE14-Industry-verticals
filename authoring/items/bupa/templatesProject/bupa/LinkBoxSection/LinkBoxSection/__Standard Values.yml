@@ -1,0 +1,38 @@
+﻿---
+ID: "b83cc980-20fa-4f93-ae9e-26baf2473844"
+Parent: "391b75a3-65ed-4bcb-9d8a-3df8926adf65"
+Template: "391b75a3-65ed-4bcb-9d8a-3df8926adf65"
+Path: /sitecore/templates/Project/bupa/LinkBoxSection/LinkBoxSection/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "09535400-6000-4757-9c8b-5b94d9a9a1b2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260220T134639Z
+    - ID: "2d21a962-2728-4ee6-99a3-ee5fa88579e1"
+      Hint: Title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a48437f7-4bcc-46cb-a034-8366b8e2bf9b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260504T142858Z
