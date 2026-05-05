@@ -1,0 +1,45 @@
+﻿---
+ID: "e15816e2-b6a6-4bd7-a055-4ba2a8498f1d"
+Parent: "be6c376c-9b24-48f0-9040-77a5cd28a0ef"
+Template: "7c8a1c05-0001-4000-8005-000000000002"
+Path: "/sitecore/content/bupa/bupa-uk/Data/ImageLinkBoxCards/Your health in your hands/Fertility and endometriosis"
+SharedFields:
+- ID: "7c8a1c05-0001-4000-8005-000000000004"
+  Hint: Image
+  Value: |
+    <image mediaid="80e07c0e-3688-4b56-b0ed-47fba44c7523" />
+- ID: "7c8a1c05-0001-4000-8005-000000000008"
+  Hint: Cta
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="" class="" text="Fertility and endometriosis" title=""/>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "96a70f81-67ec-485c-9e0a-4249a7fdbe6f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T084110Z
+    - ID: "7c8a1c05-0001-4000-8005-000000000005"
+      Hint: Title
+      Value: Fertility and endometriosis
+    - ID: "7c8a1c05-0001-4000-8005-000000000007"
+      Hint: Body
+      Value: |
+        <div class="ck-content"><p>Having endometriosis can mean you're more likely to have difficulties getting pregnant. In our article, our Clinical Lead for Women's health Dr Sam Wild, aims to answer common questions about endometriosis, fertility and pregnancy.</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "18420283-5ac5-4b57-a6ec-791b632c4bf6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T084525Z

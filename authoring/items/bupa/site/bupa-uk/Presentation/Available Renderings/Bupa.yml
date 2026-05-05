@@ -5,44 +5,48 @@ Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
 Path: "/sitecore/content/bupa/bupa-uk/Presentation/Available Renderings/Bupa"
 BranchID: "209f458a-5f7c-4024-9bbb-c78ad6d21abc"
 SharedFields:
-  - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-    Hint: Renderings
-    Value: |
-      {F3832BC0-FBDE-49A7-89D5-4EC0713B0577}
-      {D2722434-38D7-41C7-A743-EB545A725A37}
-      {7C8A1C01-0001-4000-8001-000000000013}
-      {C2000001-0001-4000-8002-000000000001}
-      {7C8A1C05-0001-4000-8005-000000000015}
-      {7C8A1C06-0001-4000-8006-000000000011}
-  - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
-    Hint: __Shared revision
-    Value: "294e90b0-0c5d-4c98-b602-5804bda2fe3b"
-  - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-    Hint: __Originator
-    Value: "{EDD5B21F-2BD2-4290-81A2-68428363D312}"
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {F3832BC0-FBDE-49A7-89D5-4EC0713B0577}
+    {D2722434-38D7-41C7-A743-EB545A725A37}
+    {7C8A1C01-0001-4000-8001-000000000013}
+    {C2000001-0001-4000-8002-000000000001}
+    {7C8A1C06-0001-4000-8006-000000000011}
+    {7C8A1C08-0001-4000-8008-000000000015}
+    {7C8A1C05-0001-4000-8005-000000000015}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "d472fc4d-f2d7-4622-bb62-c8632f66ed0f"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EDD5B21F-2BD2-4290-81A2-68428363D312}"
 Languages:
-  - Language: en
-    Versions:
-      - Version: 1
-        Fields:
-          - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-            Hint: __Created
-            Value: 20260504T091856Z
-          - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-            Hint: __Owner
-            Value: |
-              sitecore\johan.becue@sitecore.com
-          - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-            Hint: __Created by
-            Value: |
-              sitecore\johan.becue@sitecore.com
-          - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-            Hint: __Revision
-            Value: "555e1001-fa17-48cc-88aa-95ef7fc7a725"
-          - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-            Hint: __Updated by
-            Value: |
-              sitecore\johan.becue@sitecore.com
-          - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-            Hint: __Updated
-            Value: 20260504T222349Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b86697d-60ca-4d80-83fb-7555a2e6ce1c"
+      Hint: __Source
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260504T091856Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4d949d19-83da-4986-a365-59b07b755db0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T090213Z

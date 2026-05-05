@@ -1,4 +1,4 @@
----
+﻿---
 ID: "c2000007-0001-4000-8002-000000000001"
 Parent: "c2000002-0001-4000-8002-000000000001"
 Template: "7c8a1c01-0001-4000-8001-000000000002"
@@ -7,15 +7,18 @@ SharedFields:
 - ID: "7c8a1c01-0001-4000-8001-000000000004"
   Hint: Image
   Value: |
-    <image mediaid="8f0ca80e-16ff-44cd-9372-898b5d614f27" alt="Fitness" />
+    <image mediaid="2dd76919-5774-485b-a2b3-33704319db3e" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "c2000007-0001-4000-8002-000000000002"
+  Value: "88227807-05f5-4e22-b772-3359d4662014"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260504T180000Z
@@ -32,14 +35,14 @@ Languages:
       Value: Fitness
     - ID: "7c8a1c01-0001-4000-8001-000000000006"
       Hint: Description
-      Value: On-demand exercise at your fingertips
+      Value: "On-demand exercise at your fingertips"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c2000007-0001-4000-8002-000000000003"
+      Value: "10ce86d8-b318-405e-be62-57cfbfc719ac"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260504T180000Z
+      Value: 20260505T003321Z

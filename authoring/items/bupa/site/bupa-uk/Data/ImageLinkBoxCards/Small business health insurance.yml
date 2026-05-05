@@ -1,4 +1,4 @@
----
+﻿---
 ID: "c3000008-0001-4000-8007-000000000001"
 Parent: "c3000001-0001-4000-8007-000000000001"
 Template: "7c8a1c05-0001-4000-8005-000000000002"
@@ -7,19 +7,22 @@ SharedFields:
 - ID: "7c8a1c05-0001-4000-8005-000000000004"
   Hint: Image
   Value: |
-    <image mediaid="8f0ca80e-16ff-44cd-9372-898b5d614f27" alt="Get 20% off small business health insurance" />
+    <image mediaid="d06eaa5e-0947-4461-941a-d49dc67c8df5" />
 - ID: "7c8a1c05-0001-4000-8005-000000000008"
   Hint: Cta
   Value: |
     <link text="Get a quote" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "c3000008-0001-4000-8007-000000000002"
+  Value: "422e192d-d5e1-44cf-911d-bfe0472a52bc"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260505T120000Z
@@ -40,14 +43,14 @@ Languages:
     - ID: "7c8a1c05-0001-4000-8005-000000000007"
       Hint: Body
       Value: |
-        <p>Buy directly from Bupa and get 20% off your quote price. Discount does not apply to Insurance Premium Tax (IPT). New customers only. Offer ends 29 May 2026. T&amp;Cs apply.</p>
+        <div class="ck-content"><p>Buy directly from Bupa and get 20% off your quote price. Discount does not apply to Insurance Premium Tax (IPT). New customers only. Offer ends 29 May 2026. <a href="~/link.aspx?_id=C62DE7CEDFE4464C8958C9B7C6735399&amp;_z=z">T&amp;Cs apply</a>.</p></div>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c3000008-0001-4000-8007-000000000003"
+      Value: "7c0fc0a7-9ea1-455f-be89-d08764d45688"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T120000Z
+      Value: 20260505T011252Z

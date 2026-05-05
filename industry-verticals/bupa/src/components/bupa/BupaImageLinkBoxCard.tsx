@@ -14,8 +14,8 @@ import {
 import { ComponentProps } from '@/lib/component-props';
 
 /**
- * BupaImageLinkBoxCard — image, title, subtitle, rich body, bottom CTA link (Supporting your health grid).
- * Row layout / equal heights: parent BupaImageLinkBoxSection uses CSS Grid + display:contents wrapper.
+ * BupaImageLinkBoxCard — image, title, subtitle, rich body, bottom CTA link (Supporting your health band).
+ * Responsive slice widths (`md`: 2-up, `lg+`: 3-up) are styled from `BupaImageLinkBoxSection` (`styled-jsx`); root stays `w-full`.
  */
 
 export interface ImageLinkBoxCardFields {
@@ -96,11 +96,11 @@ export const Default = (props: ImageLinkBoxCardProps): JSX.Element | null => {
   return (
     <div
       key={id ?? props.rendering?.uid}
-      className={`component image-link-box-card flex h-full min-h-0 w-full min-w-0 flex-col ${styles || ''}`}
+      className={`component image-link-box-card flex h-full min-h-0 w-full min-w-0 shrink-0 flex-col md:w-[calc((100%-4rem)/3)] ${styles || ''}`}
       id={id}
     >
-      <article className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-black/5">
-        <div className="relative aspect-[4/3] w-full shrink-0 bg-[#e8ecf0] sm:aspect-video">
+      <article className="flex h-full min-h-0 flex-col overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-black/5">
+        <div className="relative aspect-12/5 w-full shrink-0 overflow-hidden bg-[#e8ecf0]">
           <SitecoreImage field={fields.Image} className="h-full w-full object-cover" />
         </div>
         <div className="flex min-h-0 flex-1 flex-col px-5 py-6 text-left sm:px-6 sm:py-7">
@@ -115,7 +115,7 @@ export const Default = (props: ImageLinkBoxCardProps): JSX.Element | null => {
             className="mt-2 text-sm leading-snug font-semibold text-[#333333] sm:text-[0.9375rem]"
           />
           <div className="mt-3 min-h-0 flex-1 text-sm leading-relaxed text-[#555555] sm:text-[0.9375rem] [&_a]:font-medium [&_a]:text-[#0079c1] [&_a]:underline [&_a]:underline-offset-2 [&_p]:mb-2 [&_p:last-child]:mb-0">
-            {fields.Body?.value ? <RichText field={fields.Body} /> : null}
+            <RichText field={fields.Body} />
           </div>
           {fields.Cta?.value?.href ? (
             <SitecoreLink field={fields.Cta} className={linkClass}>

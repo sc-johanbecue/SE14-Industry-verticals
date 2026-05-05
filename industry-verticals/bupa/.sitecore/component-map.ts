@@ -35,6 +35,7 @@ import * as BupaLinkBoxSection from 'src/components/bupa/BupaLinkBoxSection';
 import * as BupaLinkBoxCard from 'src/components/bupa/BupaLinkBoxCard';
 import * as BupaImageLinkBoxSection from 'src/components/bupa/BupaImageLinkBoxSection';
 import * as BupaImageLinkBoxCard from 'src/components/bupa/BupaImageLinkBoxCard';
+import * as BupaImageContentBlock from 'src/components/bupa/BupaImageContentBlock';
 import * as BupaBoxSection from 'src/components/bupa/BupaBoxSection';
 import * as BupaBoxCard from 'src/components/bupa/BupaBoxCard';
 import * as SimpleExampleSection from 'src/components/bupa/SEComponentExamples/SectionCard/SimpleExample Section';
@@ -80,6 +81,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BupaLinkBoxCard', { ...BupaLinkBoxCard, componentType: 'client' }],
   ['BupaImageLinkBoxSection', { ...BupaImageLinkBoxSection, componentType: 'client' }],
   ['BupaImageLinkBoxCard', { ...BupaImageLinkBoxCard, componentType: 'client' }],
+  ['BupaImageContentBlock', { ...BupaImageContentBlock, componentType: 'client' }],
   ['BupaBoxSection', { ...BupaBoxSection, componentType: 'client' }],
   ['BupaBoxCard', { ...BupaBoxCard, componentType: 'client' }],
   ['SimpleExample Section', { ...SimpleExampleSection, componentType: 'client' }],

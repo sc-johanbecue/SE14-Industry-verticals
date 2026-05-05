@@ -1,0 +1,45 @@
+﻿---
+ID: "32b85e1b-7041-4b64-8ac8-1f60ac9a056a"
+Parent: "be6c376c-9b24-48f0-9040-77a5cd28a0ef"
+Template: "7c8a1c05-0001-4000-8005-000000000002"
+Path: "/sitecore/content/bupa/bupa-uk/Data/ImageLinkBoxCards/Your health in your hands/Living with endometriosis - Michelle Ackerley"
+SharedFields:
+- ID: "7c8a1c05-0001-4000-8005-000000000004"
+  Hint: Image
+  Value: |
+    <image mediaid="46cd9a9a-45e3-4482-9125-669d2141a33b" />
+- ID: "7c8a1c05-0001-4000-8005-000000000008"
+  Hint: Cta
+  Value: |
+    <link linktype="internal" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" anchor="" querystring="" target="" class="" text="Living with endometriosis" title=""/>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6e8c355b-20f4-42c2-b206-19f9b58e39ff"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T083919Z
+    - ID: "7c8a1c05-0001-4000-8005-000000000005"
+      Hint: Title
+      Value: "Living with endometriosis: Michelle Ackerley"
+    - ID: "7c8a1c05-0001-4000-8005-000000000007"
+      Hint: Body
+      Value: |
+        <div class="ck-content"><p>TV and radio presenter Michelle Ackerley talks about her journey with endometriosis and shares her advice for managing the condition.</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "94e29810-5524-40ba-88c4-06398f64b183"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T084052Z
