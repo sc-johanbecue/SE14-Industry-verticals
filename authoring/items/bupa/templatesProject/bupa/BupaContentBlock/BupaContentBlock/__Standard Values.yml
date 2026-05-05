@@ -1,0 +1,40 @@
+---
+ID: "7d8e1c09-0001-400d-800d-000000000005"
+Parent: "7d8e1c09-0001-400d-800d-000000000002"
+Template: "7d8e1c09-0001-400d-800d-000000000002"
+Path: /sitecore/templates/Project/bupa/BupaContentBlock/BupaContentBlock/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "7d8e1c09-0001-400d-800d-000000000107"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "7d8e1c09-0001-400d-800d-000000000004"
+      Hint: Body
+      Value: |
+        <p>‡ Add one child under 20 to your policy at no extra cost when you take out a family policy. Family discount applies to Comprehensive and Treatment and Care policies. <a href="#">Terms and Conditions (PDF, 0.05MB)</a></p>
+        <p>Bupa Insurance Limited is registered in England and Wales No. 3956433. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Registered office: 1 Angel Court, London, EC2R 7HJ.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d8e1c09-0001-400d-800d-000000000108"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T120000Z
