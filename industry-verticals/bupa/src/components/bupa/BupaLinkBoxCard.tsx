@@ -112,7 +112,11 @@ export const Default = (props: LinkBoxCardProps): JSX.Element | null => {
     'text-left text-sm font-normal text-[#0057B8] underline decoration-[#0057B8] underline-offset-2 hover:text-[#003359]';
 
   return (
-    <div className={`component link-box-card w-full ${styles || ''}`} id={id}>
+    <div
+      key={id ?? props.rendering?.uid}
+      className={`component link-box-card w-full ${styles || ''}`}
+      id={id}
+    >
       <div className="flex h-full min-h-[280px] flex-col gap-4 bg-[#f4f7f9] p-6 text-left lg:min-h-[300px] lg:p-8">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center">
           <SitecoreImage field={fields.Icon} className="h-12 w-12 object-contain" />
@@ -140,42 +144,24 @@ export const Default = (props: LinkBoxCardProps): JSX.Element | null => {
         </div>
 
         <div className="mt-auto pt-2">
-          {fields.Cta?.value?.href ? (
-            <SitecoreLink
-              field={fields.Cta}
-              className="flex w-full items-center justify-between gap-3 rounded-sm bg-[#0079C8] px-4 py-3.5 text-left text-base font-medium text-white transition-colors hover:bg-[#006ba8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0079C8]"
+          <SitecoreLink
+            field={fields.Cta}
+            className="flex w-full items-center justify-between gap-3 rounded-sm bg-[#0079C8] px-4 py-3.5 text-left text-base font-medium text-white transition-colors hover:bg-[#006ba8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0079C8]"
+          >
+            {fields.Cta?.value?.text}
+            <svg
+              className="h-5 w-5 shrink-0 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
             >
-              {fields.Cta?.value?.text}
-              <svg
-                className="h-5 w-5 shrink-0 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden
-              >
-                <path d="M9 6l6 6-6 6" />
-              </svg>
-            </SitecoreLink>
-          ) : (
-            <span className="flex w-full items-center justify-between gap-3 rounded-sm bg-[#0079C8] px-4 py-3.5 text-base font-medium text-white opacity-90">
-              {fields.Cta?.value?.text}
-              <svg
-                className="h-5 w-5 shrink-0"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden
-              >
-                <path d="M9 6l6 6-6 6" />
-              </svg>
-            </span>
-          )}
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </SitecoreLink>
         </div>
       </div>
     </div>

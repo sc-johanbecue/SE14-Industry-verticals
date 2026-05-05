@@ -38,6 +38,7 @@ export const Default = (props: LinkBoxSectionProps): JSX.Element => {
 
   return (
     <section
+      key={id ?? props.rendering?.uid}
       className={`component link-box-section bg-white py-10 lg:py-14 ${styles || ''}`}
       id={id}
     >

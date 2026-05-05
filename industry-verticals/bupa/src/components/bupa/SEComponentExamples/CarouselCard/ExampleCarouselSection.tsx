@@ -99,6 +99,7 @@ export const Default = (props: TestimonialCarouselSectionProps): JSX.Element => 
 
   return (
     <section
+      key={id ?? props.rendering?.uid}
       className={`component testimonial-carousel-section bg-[#F5F5F5] py-12 lg:py-16 ${styles || ''}`}
       id={id}
     >

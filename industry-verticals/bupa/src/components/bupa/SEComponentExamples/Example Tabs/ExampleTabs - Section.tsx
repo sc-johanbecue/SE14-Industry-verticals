@@ -136,6 +136,7 @@ export const Default = (props: PricingSectionProps): JSX.Element => {
 
   return (
     <section
+      key={id ?? props.rendering?.uid}
       className={`component pricing-section bg-white py-12 lg:py-20 ${styles || ''}`}
       id={id}
     >

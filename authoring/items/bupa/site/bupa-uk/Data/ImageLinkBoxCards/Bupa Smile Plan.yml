@@ -1,0 +1,53 @@
+---
+ID: "c3000006-0001-4000-8007-000000000001"
+Parent: "c3000001-0001-4000-8007-000000000001"
+Template: "7c8a1c05-0001-4000-8005-000000000002"
+Path: "/sitecore/content/bupa/bupa-uk/Data/ImageLinkBoxCards/Bupa Smile Plan"
+SharedFields:
+- ID: "7c8a1c05-0001-4000-8005-000000000004"
+  Hint: Image
+  Value: |
+    <image mediaid="8f0ca80e-16ff-44cd-9372-898b5d614f27" alt="Your routine for a healthier, happier smile" />
+- ID: "7c8a1c05-0001-4000-8005-000000000008"
+  Hint: Cta
+  Value: |
+    <link text="More on Bupa Smile Plan" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c3000006-0001-4000-8007-000000000002"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "7c8a1c05-0001-4000-8005-000000000005"
+      Hint: Title
+      Value: Your routine for a healthier, happier smile
+    - ID: "7c8a1c05-0001-4000-8005-000000000006"
+      Hint: Subtitle
+      Value: Start your dental payment plan today
+    - ID: "7c8a1c05-0001-4000-8005-000000000007"
+      Hint: Body
+      Value: |
+        <p>Keep on top of your dental health with a monthly payment plan for year-round routine care. Spread the cost of check-ups and hygiene appointments and save on additional treatments and services.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c3000006-0001-4000-8007-000000000003"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T120000Z

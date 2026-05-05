@@ -1,0 +1,15 @@
+/* Montserrat for all Bupa-branded / Bupa-folder components */
+.component.link-box-section,
+.component.link-box-card,
+.component.box-section,
+.component.box-card,
+.component.image-link-box-section,
+.component.image-link-box-card,
+.component.services-section,
+.component.service-card,
+.component.pricing-section,
+.component.pricing-card,
+.component.testimonial-carousel-section,
+.component.testimonial-card {
+  font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

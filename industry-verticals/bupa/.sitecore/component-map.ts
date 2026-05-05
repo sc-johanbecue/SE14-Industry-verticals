@@ -33,6 +33,10 @@ import * as Container from 'src/components/container/Container';
 import * as ColumnSplitter from 'src/components/column-splitter/ColumnSplitter';
 import * as BupaLinkBoxSection from 'src/components/bupa/BupaLinkBoxSection';
 import * as BupaLinkBoxCard from 'src/components/bupa/BupaLinkBoxCard';
+import * as BupaImageLinkBoxSection from 'src/components/bupa/BupaImageLinkBoxSection';
+import * as BupaImageLinkBoxCard from 'src/components/bupa/BupaImageLinkBoxCard';
+import * as BupaBoxSection from 'src/components/bupa/BupaBoxSection';
+import * as BupaBoxCard from 'src/components/bupa/BupaBoxCard';
 import * as SimpleExampleSection from 'src/components/bupa/SEComponentExamples/SectionCard/SimpleExample Section';
 import * as SimpleExampleCard from 'src/components/bupa/SEComponentExamples/SectionCard/SimpleExample Card';
 import * as ExampleTabsTab from 'src/components/bupa/SEComponentExamples/Example Tabs/ExampleTabs - Tab';
@@ -74,6 +78,10 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ColumnSplitter', { ...ColumnSplitter }],
   ['BupaLinkBoxSection', { ...BupaLinkBoxSection, componentType: 'client' }],
   ['BupaLinkBoxCard', { ...BupaLinkBoxCard, componentType: 'client' }],
+  ['BupaImageLinkBoxSection', { ...BupaImageLinkBoxSection, componentType: 'client' }],
+  ['BupaImageLinkBoxCard', { ...BupaImageLinkBoxCard, componentType: 'client' }],
+  ['BupaBoxSection', { ...BupaBoxSection, componentType: 'client' }],
+  ['BupaBoxCard', { ...BupaBoxCard, componentType: 'client' }],
   ['SimpleExample Section', { ...SimpleExampleSection, componentType: 'client' }],
   ['SimpleExample Card', { ...SimpleExampleCard, componentType: 'client' }],
   ['ExampleTabs - Tab', { ...ExampleTabsTab, componentType: 'client' }],

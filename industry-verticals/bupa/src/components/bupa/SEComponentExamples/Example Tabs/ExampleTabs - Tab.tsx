@@ -44,6 +44,7 @@ export const Default = (props: PricingTabProps): JSX.Element => {
 
   return (
     <div
+      key={id ?? props.rendering?.uid}
       className={`pricing-tab-card ${styles || ''}`}
       id={id}
       data-tab-label={(fields.TabLabel?.value as string) || 'Tab'}

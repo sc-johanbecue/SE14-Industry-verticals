@@ -46,6 +46,7 @@ export const Default = (props: servicesSectionProps): JSX.Element => {
 
   return (
     <section
+      key={id ?? props.rendering?.uid}
       className={`component services-section bg-white py-12 lg:py-16 ${styles || ''}`}
       id={id}
     >

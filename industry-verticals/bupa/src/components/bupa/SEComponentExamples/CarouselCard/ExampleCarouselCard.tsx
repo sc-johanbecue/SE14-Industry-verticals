@@ -64,6 +64,7 @@ export const Default = (props: TestimonialCardProps): JSX.Element | null => {
 
   return (
     <div
+      key={id ?? props.rendering?.uid}
       className={`component testimonial-card w-full shrink-0 text-center ${styles || ''}`}
       id={id}
     >

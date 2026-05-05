@@ -242,7 +242,7 @@ export const Default = (props: PricingCardProps): JSX.Element => {
   const checkoutOptions = fields.CheckoutOptions || [];
 
   return (
-    <div className={`component pricing-card ${styles}`} id={id}>
+    <div key={id ?? props.rendering?.uid} className={`component pricing-card ${styles}`} id={id}>
       <div
         className="flex h-full flex-col overflow-hidden rounded-xl"
         style={{ border: '1px solid #e0e0e0', backgroundColor: '#ffffff' }}

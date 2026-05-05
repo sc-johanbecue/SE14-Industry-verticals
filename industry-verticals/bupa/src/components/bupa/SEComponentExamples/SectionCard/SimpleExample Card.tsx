@@ -59,7 +59,11 @@ export const Default = (props: serviceCardProps): JSX.Element | null => {
   if (!hasContent) return null;
 
   return (
-    <div className={`component service-card w-full ${styles || ''}`} id={id}>
+    <div
+      key={id ?? props.rendering?.uid}
+      className={`component service-card w-full ${styles || ''}`}
+      id={id}
+    >
       <div className="flex h-full flex-col items-center rounded-lg border border-[#d0d0d0] bg-white px-6 pt-8 pb-8 text-center lg:px-8 lg:pt-10 lg:pb-10">
         {/* Icon */}
         <div className="mb-5 flex h-16 w-16 items-center justify-center">
