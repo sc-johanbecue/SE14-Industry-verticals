@@ -1,8 +1,8 @@
----
+﻿---
 ID: "7d8e1c09-0001-400d-800d-000000000002"
 Parent: "7d8e1c09-0001-400d-800d-000000000001"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/bupa/BupaContentBlock/BupaContentBlock
+Path: /sitecore/templates/Project/bupa/ContentBlock/BupaContentBlock
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters

@@ -1,8 +1,8 @@
----
+﻿---
 ID: "7d8e1c09-0001-400d-800d-000000000005"
 Parent: "7d8e1c09-0001-400d-800d-000000000002"
 Template: "7d8e1c09-0001-400d-800d-000000000002"
-Path: /sitecore/templates/Project/bupa/BupaContentBlock/BupaContentBlock/__Standard Values
+Path: /sitecore/templates/Project/bupa/ContentBlock/BupaContentBlock/__Standard Values
 SharedFields:
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision

@@ -1,8 +1,8 @@
----
-ID: "7d8e1c09-0001-400d-800d-000000000003"
-Parent: "7d8e1c09-0001-400d-800d-000000000002"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Project/bupa/BupaContentBlock/BupaContentBlock/Data
+﻿---
+ID: "7d8e1c09-0001-400d-800d-000000000014"
+Parent: "7d8e1c09-0001-400d-800d-000000000012"
+Template: "7d8e1c09-0001-400d-800d-000000000012"
+Path: /sitecore/templates/Project/bupa/ContentBlock/BupaContentBlock Parameters/__Standard Values
 Languages:
 - Language: en
   Versions:
@@ -21,7 +21,7 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7d8e1c09-0001-400d-800d-000000000104"
+      Value: "7d8e1c09-0001-400d-800d-000000000111"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

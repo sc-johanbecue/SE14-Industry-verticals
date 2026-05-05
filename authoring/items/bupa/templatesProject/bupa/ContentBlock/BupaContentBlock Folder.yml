@@ -1,8 +1,8 @@
----
+﻿---
 ID: "7d8e1c09-0001-400d-800d-000000000010"
 Parent: "7d8e1c09-0001-400d-800d-000000000001"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/bupa/BupaContentBlock/BupaContentBlock Folder
+Path: /sitecore/templates/Project/bupa/ContentBlock/BupaContentBlock Folder
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
