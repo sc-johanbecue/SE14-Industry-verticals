@@ -1,12 +1,19 @@
----
+﻿---
 ID: "7ad4de75-d9a1-4baa-93e5-90ae81fe09ba"
 Parent: "c62de7ce-dfe4-464c-8958-c9b7c6735399"
 Template: "b9c9a7ee-72fc-47a6-bfa5-457734957597"
 Path: "/sitecore/content/bupa/bupa-uk/Home/Individuals and families"
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{F3E3D4EF-0191-43D1-A6CC-DDCBB225332F}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "d75efae5-d845-4b9a-9bfd-8c91373a412c"
+  Value: "3e4e6850-a8ae-4755-8dca-3c60def3459f"
 Languages:
 - Language: en
   Versions:
@@ -15,6 +22,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260506T090848Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Individuals and families
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,17 +35,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5c969cdd-adc0-424e-945b-6337c92c1e32"
+      Value: "7952ad02-860c-4fb3-a050-2a009eeff626"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T090848Z
-    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
-      Hint: NavigationTitle
-      Value: "Individuals and families"
+      Value: 20260506T094504Z
     - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
       Hint: Title
-      Value: "Individuals and families"
+      Value: Individuals and families

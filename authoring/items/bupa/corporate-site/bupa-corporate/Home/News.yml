@@ -1,0 +1,41 @@
+---
+ID: "bfbcc806-06cd-45b5-b8ff-3a12c5f89ea1"
+Parent: "3acc9b51-6a8a-423b-98d1-e3071967c7a4"
+Template: "b9c9a7ee-72fc-47a6-bfa5-457734957597"
+Path: "/sitecore/content/bupa/bupa-corporate/Home/News"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bfbcc80606cd45b5"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260506T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9393e91a-8c11-42b2-bc44-0b0df4694560"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T120000Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "News"
+    - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
+      Hint: Title
+      Value: "News"

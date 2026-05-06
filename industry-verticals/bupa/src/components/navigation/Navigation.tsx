@@ -454,3 +454,90 @@ export const BupaNavigation = ({ params, fields }: NavigationProps): JSX.Element
     </div>
   );
 };
+
+export const BupaCorporateNavigation = ({ params, fields }: NavigationProps): JSX.Element => {
+  const id = params.RenderingIdentifier;
+  const topLevelItems = useMemo(() => getBupaTopLevelItems(fields), [fields]);
+
+  if (!topLevelItems.length) {
+    return (
+      <div className={`component bupa-corporate-navigation ${params.styles || ''}`} id={id}>
+        <p className="m-0 px-2 text-sm text-white/70 lg:text-center">[Corporate navigation]</p>
+      </div>
+    );
+  }
+
+  return (
+    <nav
+      className={`component bupa-corporate-navigation w-full ${params.styles || ''}`}
+      id={id}
+      aria-label="Main"
+    >
+      <ul className="m-0 hidden list-none flex-wrap items-center justify-center gap-1 p-0 lg:flex xl:gap-2">
+        {topLevelItems.map((item) => (
+          <li key={item.Id} className="group relative">
+            <a
+              href={bupaHref(item)}
+              className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-[0.95rem] font-medium text-white no-underline transition hover:bg-white/10 xl:px-4"
+            >
+              {bupaText(item)}
+              {item.Children?.length ? (
+                <ChevronDown className="h-4 w-4 shrink-0 opacity-90" aria-hidden />
+              ) : null}
+            </a>
+            {item.Children?.length ? (
+              <div
+                className={[
+                  'invisible absolute top-full left-1/2 z-50 mt-0 min-w-56 -translate-x-1/2',
+                  'rounded-lg border border-white/10 bg-[#001a3d] py-2 shadow-xl',
+                  'opacity-0 transition ease-out group-hover:visible group-hover:opacity-100',
+                ].join(' ')}
+              >
+                <ul className="m-0 list-none p-0">
+                  {item.Children.map((child) => (
+                    <li key={child.Id}>
+                      <a
+                        href={bupaHref(child)}
+                        className="block px-4 py-2.5 text-[0.9rem] text-white/95 no-underline hover:bg-white/10"
+                      >
+                        {bupaText(child)}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </li>
+        ))}
+      </ul>
+
+      <ul className="m-0 flex list-none flex-col gap-1 p-0 lg:hidden">
+        {topLevelItems.map((item) => (
+          <li key={item.Id} className="rounded-lg bg-white/5">
+            <a
+              href={bupaHref(item)}
+              className="flex items-center justify-between px-3 py-3 text-base font-semibold text-white no-underline"
+            >
+              {bupaText(item)}
+              <ChevronRight className="h-5 w-5 shrink-0 opacity-70" aria-hidden />
+            </a>
+            {item.Children?.length ? (
+              <ul className="m-0 border-t border-white/10 p-0">
+                {item.Children.map((child) => (
+                  <li key={child.Id} className="border-b border-white/5 last:border-b-0">
+                    <a
+                      href={bupaHref(child)}
+                      className="block px-5 py-2.5 text-sm text-white/85 no-underline hover:bg-white/5"
+                    >
+                      {bupaText(child)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};

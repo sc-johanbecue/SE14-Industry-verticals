@@ -51,6 +51,18 @@ import * as ExampleTabsSection from 'src/components/bupa/SEComponentExamples/Exa
 import * as ExampleTabsCard from 'src/components/bupa/SEComponentExamples/Example Tabs/ExampleTabs - Card';
 import * as ExampleCarouselSection from 'src/components/bupa/SEComponentExamples/CarouselCard/ExampleCarouselSection';
 import * as ExampleCarouselCard from 'src/components/bupa/SEComponentExamples/CarouselCard/ExampleCarouselCard';
+import * as BupaCorporateThinkingSection from 'src/components/bupa/corporate/BupaCorporateThinkingSection';
+import * as BupaCorporateThinkingCard from 'src/components/bupa/corporate/BupaCorporateThinkingCard';
+import * as BupaCorporateStatsSection from 'src/components/bupa/corporate/BupaCorporateStatsSection';
+import * as BupaCorporateSplitFeature from 'src/components/bupa/corporate/BupaCorporateSplitFeature';
+import * as BupaCorporatePromoBand from 'src/components/bupa/corporate/BupaCorporatePromoBand';
+import * as BupaCorporateHorizontalFeature from 'src/components/bupa/corporate/BupaCorporateHorizontalFeature';
+import * as BupaCorporateHeroSection from 'src/components/bupa/corporate/BupaCorporateHeroSection';
+import * as BupaCorporateHeroCard from 'src/components/bupa/corporate/BupaCorporateHeroCard';
+import * as BupaCorporateHeader from 'src/components/bupa/corporate/BupaCorporateHeader';
+import * as BupaCorporateFooter from 'src/components/bupa/corporate/BupaCorporateFooter';
+import * as BupaCorporateFinancialStrip from 'src/components/bupa/corporate/BupaCorporateFinancialStrip';
+import * as bupacorporateherodesktopbgcontext from 'src/components/bupa/corporate/bupa-corporate-hero-desktop-bg-context';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCWrapper],
@@ -103,6 +115,18 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ExampleTabs - Card', { ...ExampleTabsCard, componentType: 'client' }],
   ['ExampleCarouselSection', { ...ExampleCarouselSection, componentType: 'client' }],
   ['ExampleCarouselCard', { ...ExampleCarouselCard, componentType: 'client' }],
+  ['BupaCorporateThinkingSection', { ...BupaCorporateThinkingSection, componentType: 'client' }],
+  ['BupaCorporateThinkingCard', { ...BupaCorporateThinkingCard, componentType: 'client' }],
+  ['BupaCorporateStatsSection', { ...BupaCorporateStatsSection, componentType: 'client' }],
+  ['BupaCorporateSplitFeature', { ...BupaCorporateSplitFeature, componentType: 'client' }],
+  ['BupaCorporatePromoBand', { ...BupaCorporatePromoBand, componentType: 'client' }],
+  ['BupaCorporateHorizontalFeature', { ...BupaCorporateHorizontalFeature, componentType: 'client' }],
+  ['BupaCorporateHeroSection', { ...BupaCorporateHeroSection, componentType: 'client' }],
+  ['BupaCorporateHeroCard', { ...BupaCorporateHeroCard, componentType: 'client' }],
+  ['BupaCorporateHeader', { ...BupaCorporateHeader, componentType: 'client' }],
+  ['BupaCorporateFooter', { ...BupaCorporateFooter, componentType: 'client' }],
+  ['BupaCorporateFinancialStrip', { ...BupaCorporateFinancialStrip, componentType: 'client' }],
+  ['bupa-corporate-hero-desktop-bg-context', { ...bupacorporateherodesktopbgcontext, componentType: 'client' }],
 ]);
 
 export default componentMap;
