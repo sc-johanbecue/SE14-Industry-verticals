@@ -1,19 +1,13 @@
 ﻿---
-ID: "a34fd6af-f705-4569-9a77-8d7e1e7b8c3a"
-Parent: "2ee8b81f-3c0b-4431-b949-c0662292478d"
-Template: "b08d446e-dfa1-46f1-95c2-05de9bf82644"
-Path: "/sitecore/content/bupa/bupa-uk/Presentation/Page Designs"
-BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+ID: "b6d1c77c-519c-4f90-b775-ca1727fd959b"
+Parent: "a1d10a8e-1824-40ee-aba2-b15d90083003"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/bupa/bupa-uk/Presentation/Headless Variants/Navigation/BupaNavigation"
+BranchID: "70519928-c595-4b2b-bb35-75022feecc4c"
 SharedFields:
-- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
-  Hint: TemplatesMapping
-  Value: "%7bB9C9A7EE-72FC-47A6-BFA5-457734957597%7d%3d%257BB823AD08-2674-4B75-9EDE-101E409B832B%257D"
-- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
-  Hint: __Shared revision
-  Value: "cab9ec71-d5dd-4d4c-92a9-b24767a57ced"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
-  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+  Value: "{25F1A8E5-EB4C-4202-A9F7-A97DB52DA9AF}"
 Languages:
 - Language: en
   Versions:
@@ -21,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260504T091824Z
+      Value: 20260504T091855Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -32,11 +26,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4f305bed-02ca-49ba-938e-923688dd50bc"
+      Value: "bf2f11f7-0726-4d5d-9ad6-c5a2378c1d60"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T092044Z
+      Value: 20260504T091855Z

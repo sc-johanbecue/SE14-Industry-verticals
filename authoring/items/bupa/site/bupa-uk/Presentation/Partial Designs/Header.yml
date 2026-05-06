@@ -1,4 +1,4 @@
----
+﻿---
 ID: "6b4ab1fb-c5ef-4087-8758-0a6ccfb017d1"
 Parent: "3c74a50c-af16-4870-bc16-a1546087fcff"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
@@ -7,9 +7,13 @@ SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: header
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{BC00D1A9-3740-4424-8A87-3640458AC625}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "2a63ac72-4d0a-4b06-ab99-62cac96ad4dd"
+  Value: "cfe887e1-ece7-4167-9b30-b5dc4e5e19ff"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -25,9 +29,9 @@ SharedFields:
           s:ph="headless-header" />
         <r
           uid="{CFA80C9A-2AA8-4267-9F34-1B67D3C37CC4}"
-          p:after="r[@uid='{4D8E5AE7-6C75-4FBA-A77B-C05D3C2F2BC1}']"
+          p:after="*[1=2]"
           s:id="{9F65621E-1102-461C-BBEE-3FADCE8E0509}"
-          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;NavigationRoot&amp;LevelFrom=%7B1BB88840-5FB3-4353-AD8D-81136F6FF75A%7D&amp;LevelTo=%7BA59325BB-5A27-46F9-8110-9D499715F3BE%7D&amp;Filter=%7BD063E9D1-C7B5-4B1E-B31E-69886C9C59F5%7D&amp;AddRoot&amp;SerializerFieldNames&amp;RenderingIdentifier&amp;CSSStyles"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BB6D1C77C-519C-4F90-B775-CA1727FD959B%7D&amp;Styles&amp;NavigationRoot&amp;LevelFrom=%7B1BB88840-5FB3-4353-AD8D-81136F6FF75A%7D&amp;LevelTo=%7BA59325BB-5A27-46F9-8110-9D499715F3BE%7D&amp;Filter=%7BD063E9D1-C7B5-4B1E-B31E-69886C9C59F5%7D&amp;AddRoot&amp;SerializerFieldNames&amp;RenderingIdentifier&amp;CSSStyles"
           s:ph="/headless-header/bupa-header-nav-1" />
       </d>
     </r>
@@ -36,6 +40,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260506T084500Z
@@ -49,11 +56,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "64a9d61f-b3d8-44bf-a321-f6db7d5b4871"
+      Value: "59d5e881-32c8-4161-bd55-5766f6f2c1d0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T084500Z
+      Value: 20260506T094328Z
