@@ -16,7 +16,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@for
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Keyboard, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, Globe, Menu } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, ChevronDown, CircleHelp, Phone, Search, UserRound, Globe, Menu } from 'lucide-react';
 import { ProductCard } from 'src/components/non-sitecore/ProductCard';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
 import { ProductCard as ProductCard_f5c29266c91cfe4f66c8f4e91c1fad0bbbe159f9 } from '@/components/non-sitecore/ProductCard';
@@ -138,6 +138,11 @@ const importMap = [
       { name: 'User', value: User },
       { name: 'ShoppingCart', value: ShoppingCart },
       { name: 'ArrowLeft', value: ArrowLeft },
+      { name: 'ChevronDown', value: ChevronDown },
+      { name: 'CircleHelp', value: CircleHelp },
+      { name: 'Phone', value: Phone },
+      { name: 'Search', value: Search },
+      { name: 'UserRound', value: UserRound },
       { name: 'Globe', value: Globe },
       { name: 'Menu', value: Menu },
     ]
