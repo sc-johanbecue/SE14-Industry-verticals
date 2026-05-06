@@ -1,0 +1,52 @@
+﻿---
+ID: "c300000a-0001-4000-800a-000000000002"
+Parent: "c300000a-0001-4000-800a-000000000001"
+Template: "7c8a1c0a-0001-4000-800a-000000000002"
+Path: "/sitecore/content/bupa/bupa-uk/Data/HeroSections/Private healthcare hero"
+SharedFields:
+- ID: "7c8a1c0a-0001-4000-800a-000000000006"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="80e07c0e-3688-4b56-b0ed-47fba44c7523" />
+- ID: "7c8a1c0a-0001-4000-800a-000000000007"
+  Hint: HeaderImage
+  Value: |
+    <image mediaid="e3093671-cc8f-4275-9c33-fd9fd1cb7e7c" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bbd49aa6-5d7a-4057-923f-423b1540f764"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T140000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "7c8a1c0a-0001-4000-800a-000000000004"
+      Hint: Title
+      Value: Private healthcare
+    - ID: "7c8a1c0a-0001-4000-800a-000000000005"
+      Hint: Subtitle
+      Value: Your wellbeing, on your terms. This is health.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2632b254-42d8-41b3-94db-b617ac3decff"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T232013Z

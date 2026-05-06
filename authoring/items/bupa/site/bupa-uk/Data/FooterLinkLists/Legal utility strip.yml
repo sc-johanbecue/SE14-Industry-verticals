@@ -1,0 +1,9 @@
+﻿---
+ID: "dffaa001-0001-4ff1-d001-000000001003"
+Parent: "dffaa001-0001-4ff1-d001-000000001001"
+Template: "bffaa001-0001-4ff1-aff1-b00100000010"
+Path: "/sitecore/content/bupa/bupa-uk/Data/FooterLinkLists/Legal utility strip"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

@@ -36,9 +36,13 @@ import * as BupaLinkBoxCard from 'src/components/bupa/BupaLinkBoxCard';
 import * as BupaImageLinkBoxSection from 'src/components/bupa/BupaImageLinkBoxSection';
 import * as BupaImageLinkBoxCard from 'src/components/bupa/BupaImageLinkBoxCard';
 import * as BupaImageContentBlock from 'src/components/bupa/BupaImageContentBlock';
+import * as BupaHeroSection from 'src/components/bupa/BupaHeroSection';
+import * as BupaHeroCard from 'src/components/bupa/BupaHeroCard';
+import * as BupaFooter from 'src/components/bupa/BupaFooter';
 import * as BupaContentBlock from 'src/components/bupa/BupaContentBlock';
 import * as BupaBoxSection from 'src/components/bupa/BupaBoxSection';
 import * as BupaBoxCard from 'src/components/bupa/BupaBoxCard';
+import * as bupaherodesktopbgcontext from 'src/components/bupa/bupa-hero-desktop-bg-context';
 import * as SimpleExampleSection from 'src/components/bupa/SEComponentExamples/SectionCard/SimpleExample Section';
 import * as SimpleExampleCard from 'src/components/bupa/SEComponentExamples/SectionCard/SimpleExample Card';
 import * as ExampleTabsTab from 'src/components/bupa/SEComponentExamples/Example Tabs/ExampleTabs - Tab';
@@ -68,7 +72,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Offers', { ...Offers }],
   ['NavigationIcons', { ...NavigationIcons }],
   ['Navigation', { ...Navigation, componentType: 'client' }],
-  ['LinkList', { ...LinkList }],
+  ['LinkList', { ...LinkList, componentType: 'client' }],
   ['LanguageSwitcher', { ...LanguageSwitcher, componentType: 'client' }],
   ['Image', { ...Image }],
   ['HeroBanner', { ...HeroBanner }],
@@ -83,9 +87,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BupaImageLinkBoxSection', { ...BupaImageLinkBoxSection, componentType: 'client' }],
   ['BupaImageLinkBoxCard', { ...BupaImageLinkBoxCard, componentType: 'client' }],
   ['BupaImageContentBlock', { ...BupaImageContentBlock, componentType: 'client' }],
+  ['BupaHeroSection', { ...BupaHeroSection, componentType: 'client' }],
+  ['BupaHeroCard', { ...BupaHeroCard, componentType: 'client' }],
+  ['BupaFooter', { ...BupaFooter, componentType: 'client' }],
   ['BupaContentBlock', { ...BupaContentBlock, componentType: 'client' }],
   ['BupaBoxSection', { ...BupaBoxSection, componentType: 'client' }],
   ['BupaBoxCard', { ...BupaBoxCard, componentType: 'client' }],
+  ['bupa-hero-desktop-bg-context', { ...bupaherodesktopbgcontext, componentType: 'client' }],
   ['SimpleExample Section', { ...SimpleExampleSection, componentType: 'client' }],
   ['SimpleExample Card', { ...SimpleExampleCard, componentType: 'client' }],
   ['ExampleTabs - Tab', { ...ExampleTabsTab, componentType: 'client' }],

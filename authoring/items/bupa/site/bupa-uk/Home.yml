@@ -11,7 +11,7 @@ SharedFields:
     <image mediaid="{D4816E33-446A-4D78-9D1E-CCE83100D012}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "fdb93433-c7be-4af2-96cd-46d8be70026a"
+  Value: "c3b1e538-c12f-4e08-b11c-f3afddbf1e18"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -20,8 +20,15 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{37AD7BEB-82D1-4D85-9B87-4FFC843B106A}"
+          uid="{DC9ED617-7C57-42F7-B01E-A4183A547BDE}"
           p:before="*"
+          s:ds="c300000a-0001-4000-800a-000000000002"
+          s:id="{7C8A1C0A-0001-4000-800A-000000000015}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=24"
+          s:ph="headless-main" />
+        <r
+          uid="{37AD7BEB-82D1-4D85-9B87-4FFC843B106A}"
+          p:after="r[@uid='{DC9ED617-7C57-42F7-B01E-A4183A547BDE}']"
           s:ds="46d28796-7b88-4c70-bafc-0d6ad63e4986"
           s:id="{F3832BC0-FBDE-49A7-89D5-4EC0713B0577}"
           s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
@@ -175,11 +182,25 @@ SharedFields:
           s:ph="/headless-main/image-link-box-cards-18" />
         <r
           uid="{EDFD4E01-EFED-4F89-8366-5BC79FEA8A9A}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{981A87EB-8EC6-4A42-AB19-99A2DF6F017F}']"
           s:ds="e15816e2-b6a6-4bd7-a055-4ba2a8498f1d"
           s:id="{7C8A1C05-0001-4000-8005-000000000015}"
           s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=21"
           s:ph="/headless-main/image-link-box-cards-18" />
+        <r
+          uid="{4BDCEE06-C38F-4FBE-890C-BFA4525F6B33}"
+          p:after="r[@uid='{EDFD4E01-EFED-4F89-8366-5BC79FEA8A9A}']"
+          s:ds="c300000b-0001-4000-800b-000000000003"
+          s:id="{7C8A1C0B-0001-4000-800B-000000000015}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=25"
+          s:ph="/headless-main/bupa-hero-cards-24" />
+        <r
+          uid="{D1CC47DE-23C7-4A59-B23F-EC1D681FA48D}"
+          p:after="*[1=2]"
+          s:ds="c300000b-0001-4000-800b-000000000002"
+          s:id="{7C8A1C0B-0001-4000-800B-000000000015}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=26"
+          s:ph="/headless-main/bupa-hero-cards-24" />
       </d>
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -209,14 +230,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "edca2993-9289-4d18-8a3d-b6884fedc333"
+      Value: "91749abd-1d17-438c-9dc1-dc4d6774e406"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T095250Z
+      Value: 20260505T231940Z
     - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
       Hint: Title
       Value: "bupa-uk"

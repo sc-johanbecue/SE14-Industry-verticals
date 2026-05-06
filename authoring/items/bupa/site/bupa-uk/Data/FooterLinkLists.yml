@@ -1,0 +1,9 @@
+﻿---
+ID: "dffaa001-0001-4ff1-d001-000000001001"
+Parent: "9f6e56f4-88dd-4a08-9812-0ccdcd199940"
+Template: "bffaa001-0001-4ff1-aff1-b00100000030"
+Path: "/sitecore/content/bupa/bupa-uk/Data/FooterLinkLists"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

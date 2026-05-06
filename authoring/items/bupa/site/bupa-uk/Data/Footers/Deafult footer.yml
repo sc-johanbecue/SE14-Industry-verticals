@@ -1,0 +1,101 @@
+﻿---
+ID: "dffaa001-0001-4ff1-d001-000000000002"
+Parent: "dffaa001-0001-4ff1-d001-000000000001"
+Template: "bffaa001-0001-4ff1-aff1-a00100000010"
+Path: "/sitecore/content/bupa/bupa-uk/Data/Footers/Deafult footer"
+SharedFields:
+- ID: "bffaa001-0001-4ff1-aff1-a00100000014"
+  Hint: Logo
+  Value: |
+    <image mediaid="bd414e35-1cee-42d5-8a9b-17775bd90e11" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000016"
+  Hint: MemberHelpLink
+  Value: |
+    <link text="Member help and support" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C62DE7CE-DFE4-464C-8958-C9B7C6735399}" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000017"
+  Hint: SocialFacebookLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://www.facebook.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000018"
+  Hint: SocialInstagramLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://www.instagram.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000019"
+  Hint: SocialTiktokLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://www.tiktok.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a0010000001a"
+  Hint: SocialLinkedinLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://www.linkedin.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a0010000001b"
+  Hint: SocialYoutubeLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://www.youtube.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a0010000001c"
+  Hint: SocialXLink
+  Value: |
+    <link text="" anchor="" linktype="external" class="" title="" target="_blank" url="https://x.com" />
+- ID: "bffaa001-0001-4ff1-aff1-a0010000001d"
+  Hint: MemberHelpIcon
+  Value: |
+    <image mediaid="90aa23f5-318d-4635-8ffa-dcc864304076" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000021"
+  Hint: SocialFacebookIcon
+  Value: |
+    <image mediaid="a6ae32fb-1567-4aa8-9b16-c84a5f7b27a8" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000022"
+  Hint: SocialInstagramIcon
+  Value: |
+    <image mediaid="8fcf6e43-04f8-4e29-b6ed-4c8cc2b7e72a" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000023"
+  Hint: SocialTiktokIcon
+  Value: |
+    <image mediaid="301daf06-2cf1-467d-be59-948af14984ad" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000024"
+  Hint: SocialLinkedinIcon
+  Value: |
+    <image mediaid="fd46a49a-7e00-4b76-8778-8ae23f6358df" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000025"
+  Hint: SocialYoutubeIcon
+  Value: |
+    <image mediaid="ffc90dc5-c33b-466b-8312-98accaf584e0" />
+- ID: "bffaa001-0001-4ff1-aff1-a00100000026"
+  Hint: SocialXIcon
+  Value: |
+    <image mediaid="6eb40437-9c1f-455c-b172-872a8e1ceb34" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0facfe59-530c-49d3-b5f8-d9c0152ecc1d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T153000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a678e7e6-3451-4ee1-9436-7712a82f6bd8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bffaa001-0001-4ff1-aff1-a00100000015"
+      Hint: CopyrightLine
+      Value: © Bupa 2026
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260505T211802Z

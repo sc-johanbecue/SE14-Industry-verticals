@@ -5,6 +5,7 @@
 .component.box-card,
 .component.image-link-box-section,
 .component.image-link-box-card,
+.component.bupa-footer,
 .component.content-block,
 .component.image-content-block,
 .component.services-section,
@@ -14,4 +15,352 @@
 .component.testimonial-carousel-section,
 .component.testimonial-card {
   font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Standard LinkList inside Bupa footer (datasources: Data/Link Lists/Footer) */
+.component.bupa-footer .component.link-list {
+  --footer-link-fg: #fff;
+  color: var(--footer-link-fg);
+}
+
+.component.bupa-footer .component.link-list:not(.link-list--footer-link-list) .component-content h3 {
+  margin: 0;
+  border-bottom: 1px solid rgb(255 255 255 / 0.15);
+  padding-bottom: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--footer-link-fg);
+}
+
+@media (min-width: 768px) {
+  .component.bupa-footer .component.link-list:not(.link-list--footer-link-list) .component-content h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.component.bupa-footer
+  .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list)
+  .component-content
+  ul {
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.125rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.component.bupa-footer
+  .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list)
+  .component-content
+  a {
+  display: block;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375;
+  color: var(--footer-link-fg);
+  text-decoration: none;
+}
+
+.component.bupa-footer
+  .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list)
+  .component-content
+  a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.component.bupa-footer
+  .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list)
+  + .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list) {
+  margin-top: 0;
+  border-top: 1px solid rgb(255 255 255 / 0.15);
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .component.bupa-footer
+    .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list)
+    + .component.link-list:not(.link-list--utility-footer):not(.link-list--footer-link-list) {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+/* Footer nav: phone accordion (details + “+”), tablet+ column title + list */
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-details {
+  margin: 0;
+  padding: 0.5rem 0 0;
+  border: 0;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.375rem 0 1rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.15);
+  font-family: inherit;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-summary::-webkit-details-marker {
+  display: none;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-summary::marker {
+  content: '';
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-summary-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-chevron {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-chevron::after {
+  content: '+';
+}
+
+.component.bupa-footer
+  .component.link-list.link-list--footer-link-list
+  .link-list__footer-link-list-details[open]
+  > .link-list__footer-link-list-summary
+  .link-list__footer-link-list-chevron::after {
+  content: '\2212';
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-links {
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.125rem 0;
+  list-style: none;
+  padding: 0 0 0.5rem;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-links a {
+  display: block;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375;
+  color: var(--footer-link-fg);
+  text-decoration: none;
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-title {
+    margin: 0 0 1rem;
+    padding: 0 0 0.25rem;
+    border-bottom: none;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+
+  .component.bupa-footer .component.link-list.link-list--footer-link-list .link-list__footer-link-list-links {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.component.bupa-footer .component.link-list.link-list--footer-link-list + .component.link-list.link-list--footer-link-list {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .component.bupa-footer .component.link-list.link-list--footer-link-list + .component.link-list.link-list--footer-link-list {
+    padding-top: 0.75rem;
+  }
+}
+
+/*
+ * UtilityFooter: full-width slot + flex-wrap list so sm/md show every link on multiple lines.
+ * Each <li> is one “link |” pair (nowrap) so a new line never begins with “|” alone.
+ * Copyright + pipe follow the link block (same row when room; otherwise below).
+ */
+.component.bupa-footer .bupa-footer__utility-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0;
+  row-gap: 0.25rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .component.bupa-footer .bupa-footer__utility-row {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.component.bupa-footer .bupa-footer__utility-row .bupa-footer__utility-slot {
+  display: block;
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.component.bupa-footer .bupa-footer__utility-row .bupa-footer__utility-slot .component.link-list {
+  display: block;
+  max-width: 100%;
+}
+
+.component.bupa-footer .bupa-footer__utility-row .bupa-footer__utility-slot .component-content {
+  display: block;
+  max-width: 100%;
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer .component-content {
+  display: block;
+  max-width: 100%;
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer ul.link-list__utility-footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+  row-gap: 0.25rem;
+  max-width: 100%;
+}
+
+.component.bupa-footer
+  .component.link-list.link-list--utility-footer
+  ul.link-list__utility-footer
+  > li {
+  display: block;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer .link-list__utility-footer-pair {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer .link-list__utility-footer-pipe {
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  flex-shrink: 0;
+  font-weight: 400;
+  color: rgb(255 255 255 / 0.4);
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer .field-link {
+  display: inline;
+}
+
+.component.bupa-footer .component.link-list.link-list--utility-footer .component-content a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.8125rem;
+  line-height: 1.375;
+  vertical-align: baseline;
+}
+
+.component.bupa-footer .bupa-footer__utility-meta {
+  display: inline-flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+  min-width: 0;
+}
+
+/* Pipe before copyright — same tone as between-link pipes */
+.component.bupa-footer .bupa-footer__utility-copy-sep {
+  display: inline;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.375;
+  color: rgb(255 255 255 / 0.4);
+  vertical-align: baseline;
+}
+
+.component.bupa-footer .bupa-footer__utility-copy-text {
+  display: inline;
+  font-size: 0.8125rem;
+  line-height: 1.375;
+  color: rgb(255 255 255 / 0.9);
+  vertical-align: baseline;
+}
+
+@media (min-width: 768px) {
+  .component.bupa-footer .bupa-footer__utility-copy-text {
+    text-align: right;
+  }
+}
+
+/* SecondaryNavigation variant: horizontal utility links */
+.component.bupa-footer .component.link-list .component-content ul.flex {
+  margin-top: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.375rem;
+  row-gap: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.375;
+}
+
+.component.bupa-footer .component.link-list .component-content ul.flex a {
+  padding: 0.125rem 0;
+}
+
+.component.bupa-footer .component.link-list .component-content ul.flex .field-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.component.bupa-footer .component.link-list .component-content ul.flex li:not(:first-child)::before {
+  content: '|';
+  margin-right: 0.375rem;
+  margin-left: 0.375rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 0.4);
 }

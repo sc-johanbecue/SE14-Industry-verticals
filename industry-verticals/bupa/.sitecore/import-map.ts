@@ -8,7 +8,7 @@ import {
 // end of built-in imports
 
 import { Link, Text, useSitecore, NextImage, Placeholder, RichText, Image, CdpHelper, withDatasourceCheck } from '@sitecore-content-sdk/nextjs';
-import { useMemo, useId, useEffect, useState, useRef, useCallback } from 'react';
+import { useMemo, useId, useEffect, useState, useRef, useSyncExternalStore, useCallback, createContext, useContext } from 'react';
 import React from 'react';
 import * as React_7214d18997ee864dd178de7b3a8430f6783e8b89 from 'react';
 import Head from 'next/head';
@@ -52,6 +52,7 @@ import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
 import { pageView } from '@sitecore-cloudsdk/events/browser';
 import config from 'sitecore.config';
+import { BupaHeroDesktopBgProvider, useBupaHeroDesktopBg } from '@/components/bupa/bupa-hero-desktop-bg-context';
 
 const importMap = [
   {
@@ -76,7 +77,10 @@ const importMap = [
       { name: 'useEffect', value: useEffect },
       { name: 'useState', value: useState },
       { name: 'useRef', value: useRef },
+      { name: 'useSyncExternalStore', value: useSyncExternalStore },
       { name: 'useCallback', value: useCallback },
+      { name: 'createContext', value: createContext },
+      { name: 'useContext', value: useContext },
       { name: 'default', value: React },
       { name: '*', value: React_7214d18997ee864dd178de7b3a8430f6783e8b89 },
     ]
@@ -356,6 +360,13 @@ const importMap = [
     module: 'sitecore.config',
     exports: [
       { name: 'default', value: config },
+    ]
+  },
+  {
+    module: '@/components/bupa/bupa-hero-desktop-bg-context',
+    exports: [
+      { name: 'BupaHeroDesktopBgProvider', value: BupaHeroDesktopBgProvider },
+      { name: 'useBupaHeroDesktopBg', value: useBupaHeroDesktopBg },
     ]
   }
 ] as ImportEntry[];
