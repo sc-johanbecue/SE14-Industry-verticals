@@ -15,13 +15,12 @@ import { ComponentProps } from '@/lib/component-props';
 /** Same field shape as BupaFooter; datasource can use Project/bupa/Footer/Footer template. */
 interface CorporateFooterFields {
   Logo: ImageField;
-  CopyrightLine: TextField;
+  FollowUsTitle: TextField;
+  MemberHelpLink: LinkField;
   SocialLinkedinIcon: ImageField;
   SocialLinkedinLink: LinkField;
   SocialYoutubeIcon: ImageField;
   SocialYoutubeLink: LinkField;
-  SocialXIcon: ImageField;
-  SocialXLink: LinkField;
   SocialInstagramIcon: ImageField;
   SocialInstagramLink: LinkField;
   SocialTiktokIcon: ImageField;
@@ -30,7 +29,10 @@ interface CorporateFooterFields {
 
 const defaults: CorporateFooterFields = {
   Logo: { value: { src: '', alt: 'Bupa' } },
-  CopyrightLine: { value: '© Bupa 2026' },
+  FollowUsTitle: { value: 'Follow us' },
+  MemberHelpLink: {
+    value: { href: '#', text: 'Contact us at Bupa Group' },
+  },
   SocialLinkedinIcon: { value: {} },
   SocialLinkedinLink: { value: { href: '#', linktype: 'external' } },
   SocialInstagramIcon: { value: {} },
@@ -39,8 +41,6 @@ const defaults: CorporateFooterFields = {
   SocialTiktokLink: { value: { href: '#', linktype: 'external' } },
   SocialYoutubeIcon: { value: {} },
   SocialYoutubeLink: { value: { href: '#', linktype: 'external' } },
-  SocialXIcon: { value: {} },
-  SocialXLink: { value: { href: '#', linktype: 'external' } },
 };
 
 export type BupaCorporateFooterProps = ComponentProps & {
@@ -60,98 +60,113 @@ export const Default = (props: BupaCorporateFooterProps): JSX.Element => {
     financials: `bupa-corporate-footer-financials-${dph}`,
     utility: `bupa-corporate-footer-utility-${dph}`,
   };
+  const socialLinkClass =
+    'inline-flex items-center justify-center transition-opacity hover:opacity-80';
+  const socialImageClass = 'h-7 w-7 object-contain';
 
   return (
     <footer
       key={id}
-      className={`component bupa-corporate-footer bg-[#000814] pb-12 text-white lg:pb-16 ${styles || ''}`}
+      className={`component bupa-corporate-footer bg-[#00335b] pb-12 text-white lg:pb-16 ${styles || ''}`}
       id={id}
     >
-      <div className="mx-auto max-w-[1440px] px-6 pt-12 md:px-8 lg:pt-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-8 xl:gap-12">
-          <div className="min-w-0 lg:col-span-4">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-              <div className="min-w-0">
-                <Placeholder name={ph.impact} rendering={props.rendering} />
-              </div>
-              <div className="min-w-0">
-                <Placeholder name={ph.company} rendering={props.rendering} />
-              </div>
-              <div className="min-w-0">
-                <Placeholder name={ph.news} rendering={props.rendering} />
-              </div>
-              <div className="min-w-0">
-                <Placeholder name={ph.financials} rendering={props.rendering} />
-              </div>
-            </div>
+      <div className="mx-auto max-w-[1440px] px-6 pt-10 md:px-8 md:pt-12 lg:pt-14">
+        <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12 lg:grid-cols-6 lg:gap-x-8 xl:gap-x-10">
+          <div className="min-w-0">
+            <SitecoreImage
+              field={fields.Logo}
+              className="h-20 w-20 object-contain md:h-24 md:w-24"
+              alt={fields.Logo?.value?.alt || 'Bupa'}
+            />
           </div>
 
-          <div className="flex flex-col gap-6 border-t border-white/10 pt-8 md:border-t-0 md:pt-0 lg:items-end lg:border-l lg:border-white/10 lg:pl-8">
-            <p className="text-sm font-semibold text-white/90 lg:text-right">Follow us</p>
-            <div className="flex flex-row flex-wrap gap-3 lg:justify-end">
+          <div className="min-w-0">
+            <Placeholder name={ph.impact} rendering={props.rendering} />
+          </div>
+          <div className="min-w-0">
+            <Placeholder name={ph.company} rendering={props.rendering} />
+          </div>
+          <div className="min-w-0">
+            <Placeholder name={ph.news} rendering={props.rendering} />
+          </div>
+          <div className="min-w-0">
+            <Placeholder name={ph.financials} rendering={props.rendering} />
+          </div>
+
+          <div className="min-w-0">
+            <Text
+              tag="p"
+              field={fields.FollowUsTitle}
+              className="link-list__corporate-footer-title bupa-corporate-footer__follow-us-title"
+            />
+            <div className="mt-4 flex flex-row flex-wrap items-center gap-3">
+              <SitecoreLink
+                field={fields.SocialInstagramLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className={socialLinkClass}
+              >
+                <SitecoreImage
+                  field={fields.SocialInstagramIcon}
+                  className={socialImageClass}
+                  alt=""
+                />
+              </SitecoreLink>
               <SitecoreLink
                 field={fields.SocialLinkedinLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 p-1.5 text-white transition hover:bg-white/10 [&_img]:max-h-full [&_img]:max-w-full [&_img]:object-contain"
+                className={socialLinkClass}
               >
-                <SitecoreImage field={fields.SocialLinkedinIcon} alt="" />
-              </SitecoreLink>
-              <SitecoreLink
-                field={fields.SocialXLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 p-1.5 text-white transition hover:bg-white/10 [&_img]:max-h-full [&_img]:max-w-full [&_img]:object-contain"
-              >
-                <SitecoreImage field={fields.SocialXIcon} alt="" />
+                <SitecoreImage
+                  field={fields.SocialLinkedinIcon}
+                  className={socialImageClass}
+                  alt=""
+                />
               </SitecoreLink>
               <SitecoreLink
                 field={fields.SocialYoutubeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 p-1.5 text-white transition hover:bg-white/10 [&_img]:max-h-full [&_img]:max-w-full [&_img]:object-contain"
+                className={socialLinkClass}
               >
-                <SitecoreImage field={fields.SocialYoutubeIcon} alt="" />
-              </SitecoreLink>
-              <SitecoreLink
-                field={fields.SocialInstagramLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 p-1.5 text-white transition hover:bg-white/10 [&_img]:max-h-full [&_img]:max-w-full [&_img]:object-contain"
-              >
-                <SitecoreImage field={fields.SocialInstagramIcon} alt="" />
+                <SitecoreImage
+                  field={fields.SocialYoutubeIcon}
+                  className={socialImageClass}
+                  alt=""
+                />
               </SitecoreLink>
               <SitecoreLink
                 field={fields.SocialTiktokLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 p-1.5 text-white transition hover:bg-white/10 [&_img]:max-h-full [&_img]:max-w-full [&_img]:object-contain"
+                className={socialLinkClass}
               >
-                <SitecoreImage field={fields.SocialTiktokIcon} alt="" />
+                <SitecoreImage
+                  field={fields.SocialTiktokIcon}
+                  className={socialImageClass}
+                  alt=""
+                />
               </SitecoreLink>
+            </div>
+            <div className="mt-4">
+              <SitecoreLink
+                field={fields.MemberHelpLink}
+                className="text-lg text-white no-underline hover:text-white/85 hover:no-underline"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-[1440px] border-t border-white/15 px-6 pt-8 md:px-8">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <SitecoreImage
-            field={fields.Logo}
-            className="h-10 w-auto object-contain opacity-95 md:h-12"
-            alt={fields.Logo?.value?.alt || 'Bupa'}
-          />
-
-          <div className="flex min-w-0 flex-1 flex-col gap-3 text-[0.8125rem] leading-snug text-white/75 md:items-end">
-            <div className="bupa-corporate-footer__utility w-full md:text-right">
-              <Placeholder name={ph.utility} rendering={props.rendering} />
-            </div>
-            <Text tag="p" field={fields.CopyrightLine} className="m-0 text-white/60" />
+      <div className="mx-auto mt-10 max-w-[1440px] border-t border-white/15 px-6 pt-6 md:mt-12 md:px-8 md:pt-7">
+        <div className="bupa-corporate-footer__utility text-[0.8125rem] leading-snug text-white/75">
+          <div className="w-full">
+            <Placeholder name={ph.utility} rendering={props.rendering} />
           </div>
         </div>
       </div>

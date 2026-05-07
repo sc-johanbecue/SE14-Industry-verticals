@@ -1,20 +1,33 @@
----
+﻿---
 ID: "57d358aa-93d9-4fdd-84bc-32aa2feb751b"
 Parent: "3acc9b51-6a8a-423b-98d1-e3071967c7a4"
 Template: "b9c9a7ee-72fc-47a6-bfa5-457734957597"
 Path: "/sitecore/content/bupa/bupa-corporate/Home/Fraud and scam awareness"
 SharedFields:
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DF29F574-E588-4C1F-871D-690F5FBE6D7D}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "57d358aa93d94fdd"
+  Value: "bc672d09-098c-4860-a5ec-cb05bd16eb18"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260506T120000Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Fraud and scam awareness
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,17 +38,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9edd777c-ea1e-45d1-8595-5c771fdf4574"
+      Value: "b39a9c89-1dee-4faf-afd1-5770906809bc"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T120000Z
-    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
-      Hint: NavigationTitle
-      Value: "Fraud and scam awareness"
+      Value: 20260507T092908Z
     - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
       Hint: Title
-      Value: "Fraud and scam awareness"
+      Value: Fraud and scam awareness

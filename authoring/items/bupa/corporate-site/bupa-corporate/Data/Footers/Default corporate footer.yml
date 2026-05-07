@@ -89,6 +89,9 @@ Languages:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "a678e7e6-3451-4ee1-9436-7712a82f6bd8"
+    - ID: "bffaa001-0001-4ff1-aff1-a0010000001e"
+      Hint: FollowUsTitle
+      Value: Follow us
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useMemo, useRef, useState, JSX } from 'react';
+import React, { useEffect, useMemo, useRef, useState, JSX } from 'react';
 import { Link, TextField, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import {
@@ -26,6 +26,10 @@ import {
 import clsx from 'clsx';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
 import { Drawer, DrawerTrigger, DrawerContent, DrawerClose } from '@/shadcn/components/ui/drawer';
+import {
+  BUPA_CORPORATE_NAV_MEGA_CHANGE,
+  BupaCorporateNavMegaDetail,
+} from 'lib/bupa-corporate-events';
 
 export interface NavItemFields {
   Id: string;
@@ -458,6 +462,29 @@ export const BupaNavigation = ({ params, fields }: NavigationProps): JSX.Element
 export const BupaCorporateNavigation = ({ params, fields }: NavigationProps): JSX.Element => {
   const id = params.RenderingIdentifier;
   const topLevelItems = useMemo(() => getBupaTopLevelItems(fields), [fields]);
+  const [desktopOpenId, setDesktopOpenId] = useState<string | null>(null);
+  const [mobileOpenId, setMobileOpenId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const desktopOpenItem = topLevelItems.find((item) => item.Id === desktopOpenId) || null;
+    const isMegaOpen = Boolean(desktopOpenItem?.Children?.length);
+
+    const emit = (): void => {
+      if (typeof window === 'undefined') {
+        return;
+      }
+      const isLg = window.matchMedia('(min-width: 1024px)').matches;
+      const detail: BupaCorporateNavMegaDetail = { open: isLg && isMegaOpen };
+      window.dispatchEvent(new CustomEvent(BUPA_CORPORATE_NAV_MEGA_CHANGE, { detail }));
+    };
+    const t = window.setTimeout(emit, 0);
+    const mq = window.matchMedia('(min-width: 1024px)');
+    mq.addEventListener('change', emit);
+    return () => {
+      window.clearTimeout(t);
+      mq.removeEventListener('change', emit);
+    };
+  }, [desktopOpenId, topLevelItems]);
 
   if (!topLevelItems.length) {
     return (
@@ -467,77 +494,134 @@ export const BupaCorporateNavigation = ({ params, fields }: NavigationProps): JS
     );
   }
 
+  const desktopOpenItem = topLevelItems.find((item) => item.Id === desktopOpenId) || null;
+  const isDesktopOpen = Boolean(desktopOpenItem?.Children?.length);
+  const mobileOpenItem = topLevelItems.find((item) => item.Id === mobileOpenId) || null;
+
   return (
     <nav
       className={`component bupa-corporate-navigation w-full ${params.styles || ''}`}
       id={id}
       aria-label="Main"
     >
-      <ul className="m-0 hidden list-none flex-wrap items-center justify-center gap-1 p-0 lg:flex xl:gap-2">
-        {topLevelItems.map((item) => (
-          <li key={item.Id} className="group relative">
-            <a
-              href={bupaHref(item)}
-              className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-[0.95rem] font-medium text-white no-underline transition hover:bg-white/10 xl:px-4"
-            >
-              {bupaText(item)}
-              {item.Children?.length ? (
-                <ChevronDown className="h-4 w-4 shrink-0 opacity-90" aria-hidden />
-              ) : null}
-            </a>
-            {item.Children?.length ? (
-              <div
-                className={[
-                  'invisible absolute top-full left-1/2 z-50 mt-0 min-w-56 -translate-x-1/2',
-                  'rounded-lg border border-white/10 bg-[#001a3d] py-2 shadow-xl',
-                  'opacity-0 transition ease-out group-hover:visible group-hover:opacity-100',
-                ].join(' ')}
-              >
-                <ul className="m-0 list-none p-0">
-                  {item.Children.map((child) => (
-                    <li key={child.Id}>
-                      <a
-                        href={bupaHref(child)}
-                        className="block px-4 py-2.5 text-[0.9rem] text-white/95 no-underline hover:bg-white/10"
-                      >
-                        {bupaText(child)}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </li>
-        ))}
-      </ul>
+      <div
+        className={`relative z-100 hidden lg:block ${isDesktopOpen ? 'text-[#2f3338]' : 'text-white'}`}
+      >
+        <ul className="m-0 flex list-none items-center justify-center gap-8 p-0">
+          {topLevelItems.map((item) => {
+            const hasChildren = Boolean(item.Children?.length);
+            const isOpen = desktopOpenId === item.Id;
+            return (
+              <li key={item.Id}>
+                <a
+                  href={bupaHref(item)}
+                  onClick={(event) => {
+                    if (hasChildren) {
+                      event.preventDefault();
+                      setDesktopOpenId(isOpen ? null : item.Id);
+                    }
+                  }}
+                  className={[
+                    'inline-flex h-14 items-center gap-1.5 px-1 text-[2rem] font-semibold no-underline transition-colors',
+                    isDesktopOpen
+                      ? 'text-[#2f3338] hover:text-[#0079c8]'
+                      : 'text-white hover:text-white/85',
+                    isOpen ? 'border-b-2 border-[#0079c8]' : 'border-b-2 border-transparent',
+                  ].join(' ')}
+                  aria-expanded={hasChildren ? isOpen : undefined}
+                >
+                  {bupaText(item)}
+                  {hasChildren ? (
+                    <ChevronDown
+                      className={`h-4 w-4 shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                      aria-hidden
+                    />
+                  ) : null}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
 
-      <ul className="m-0 flex list-none flex-col gap-1 p-0 lg:hidden">
-        {topLevelItems.map((item) => (
-          <li key={item.Id} className="rounded-lg bg-white/5">
-            <a
-              href={bupaHref(item)}
-              className="flex items-center justify-between px-3 py-3 text-base font-semibold text-white no-underline"
-            >
-              {bupaText(item)}
-              <ChevronRight className="h-5 w-5 shrink-0 opacity-70" aria-hidden />
-            </a>
-            {item.Children?.length ? (
-              <ul className="m-0 border-t border-white/10 p-0">
-                {item.Children.map((child) => (
-                  <li key={child.Id} className="border-b border-white/5 last:border-b-0">
+        {desktopOpenItem?.Children?.length ? (
+          <div className="absolute top-[calc(100%+15px)] left-1/2 z-140 w-screen -translate-x-1/2 bg-[#0079c8] text-white shadow-[0_10px_28px_rgba(0,0,0,0.25)]">
+            <div className="mx-auto flex min-h-[200px] max-w-[min(100rem,100vw)] px-6 py-5">
+              <ul className="m-0 flex w-full max-w-[50%] list-none flex-col gap-2 border-r border-[#1b75b8] p-0 pr-8">
+                {desktopOpenItem.Children.map((child) => (
+                  <li key={child.Id}>
                     <a
                       href={bupaHref(child)}
-                      className="block px-5 py-2.5 text-sm text-white/85 no-underline hover:bg-white/5"
+                      className="inline-flex items-center py-1 text-[0.98rem] font-semibold text-white no-underline hover:text-white/85"
                     >
                       {bupaText(child)}
                     </a>
                   </li>
                 ))}
               </ul>
-            ) : null}
-          </li>
-        ))}
-      </ul>
+            </div>
+          </div>
+        ) : null}
+      </div>
+
+      <div className="lg:hidden">
+        {mobileOpenItem ? (
+          <div className="bg-[#0079c8] text-white">
+            <button
+              type="button"
+              onClick={() => setMobileOpenId(null)}
+              className="inline-flex items-center gap-1.5 px-5 pt-5 text-[1.55rem] font-semibold text-white/95"
+            >
+              <ChevronRight className="h-5 w-5 rotate-180" />
+              Back
+            </button>
+
+            <h2 className="m-0 px-5 py-4 text-[2.7rem] leading-none font-semibold">
+              {bupaText(mobileOpenItem)}
+            </h2>
+
+            <ul className="m-0 list-none p-0 pb-12">
+              {(mobileOpenItem.Children || []).map((child, index) => (
+                <li
+                  key={child.Id}
+                  className={
+                    index === 0 ? 'bg-[#003d73]' : 'border-b border-[#1b75b8] last:border-b-0'
+                  }
+                >
+                  <a
+                    href={bupaHref(child)}
+                    className="flex items-center justify-between px-5 py-4 text-[2rem] font-semibold text-white no-underline"
+                  >
+                    <span>{bupaText(child)}</span>
+                    <ChevronRight className="h-6 w-6" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className="bg-[#0079c8] text-white">
+            <ul className="m-0 list-none p-0 pt-6">
+              {topLevelItems.map((item) => (
+                <li key={item.Id} className="mx-5 border-b border-[#1b75b8]">
+                  <a
+                    href={bupaHref(item)}
+                    onClick={(event) => {
+                      if (item.Children?.length) {
+                        event.preventDefault();
+                        setMobileOpenId(item.Id);
+                      }
+                    }}
+                    className="flex items-center justify-between py-6 text-[2.7rem] leading-none font-semibold text-white no-underline"
+                  >
+                    <span>{bupaText(item)}</span>
+                    <ChevronRight className="h-6 w-6" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };

@@ -8,7 +8,7 @@ import {
 // end of built-in imports
 
 import { Link, Text, useSitecore, NextImage, Placeholder, RichText, Image, CdpHelper, withDatasourceCheck } from '@sitecore-content-sdk/nextjs';
-import { useMemo, useId, useEffect, useState, useRef, useSyncExternalStore, useCallback, createContext, useContext } from 'react';
+import { useMemo, useId, useEffect, useState, useRef, useCallback, useSyncExternalStore, createContext, useContext } from 'react';
 import React from 'react';
 import * as React_7214d18997ee864dd178de7b3a8430f6783e8b89 from 'react';
 import Head from 'next/head';
@@ -16,7 +16,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@for
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Keyboard, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, ChevronDown, CircleHelp, Phone, Search, UserRound, Globe, Menu } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, ChevronDown, CircleHelp, Phone, Search, UserRound, ExternalLink, Globe, Menu } from 'lucide-react';
 import { ProductCard } from 'src/components/non-sitecore/ProductCard';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
 import { ProductCard as ProductCard_f5c29266c91cfe4f66c8f4e91c1fad0bbbe159f9 } from '@/components/non-sitecore/ProductCard';
@@ -44,6 +44,7 @@ import { useStopResponsiveTransition } from '@/hooks/useStopResponsiveTransition
 import { extractMediaUrl } from '@/helpers/extractMediaUrl';
 import { getLinkContent, getLinkField, isNavLevel, isNavRootItem, prepareFields } from '@/helpers/navHelpers';
 import clsx from 'clsx';
+import { BUPA_CORPORATE_NAV_MEGA_CHANGE } from 'lib/bupa-corporate-events';
 import { useRouter } from 'next/router';
 import { localeOptions } from '@/constants/localeOptions';
 import client from 'lib/sitecore-client';
@@ -77,8 +78,8 @@ const importMap = [
       { name: 'useEffect', value: useEffect },
       { name: 'useState', value: useState },
       { name: 'useRef', value: useRef },
-      { name: 'useSyncExternalStore', value: useSyncExternalStore },
       { name: 'useCallback', value: useCallback },
+      { name: 'useSyncExternalStore', value: useSyncExternalStore },
       { name: 'createContext', value: createContext },
       { name: 'useContext', value: useContext },
       { name: 'default', value: React },
@@ -143,6 +144,7 @@ const importMap = [
       { name: 'Phone', value: Phone },
       { name: 'Search', value: Search },
       { name: 'UserRound', value: UserRound },
+      { name: 'ExternalLink', value: ExternalLink },
       { name: 'Globe', value: Globe },
       { name: 'Menu', value: Menu },
     ]
@@ -317,6 +319,12 @@ const importMap = [
     module: 'clsx',
     exports: [
       { name: 'default', value: clsx },
+    ]
+  },
+  {
+    module: 'lib/bupa-corporate-events',
+    exports: [
+      { name: 'BUPA_CORPORATE_NAV_MEGA_CHANGE', value: BUPA_CORPORATE_NAV_MEGA_CHANGE },
     ]
   },
   {

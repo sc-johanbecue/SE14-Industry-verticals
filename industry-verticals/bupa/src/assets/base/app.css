@@ -1,12 +1,14 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Clip horizontal overflow on the root so body can stay overflow-x: visible;
+     position: sticky on the header depends on a non-clipping scroll ancestor. */
+  overflow-x: clip;
 }
 
 body {
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
 }
 
 .xa-variable {

@@ -1,15 +1,12 @@
-﻿---
-ID: "6a4025f7-4287-43a0-8032-e375fb1110a9"
-Parent: "6d47560f-f8ef-42f6-88fc-f66add75700d"
-Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
-Path: "/sitecore/content/bupa/bupa-corporate/Presentation/Placeholder Settings/Partial Design/test"
+---
+ID: "bc72ffb0-ff04-4000-8000-000000000002"
+Parent: "bc72ffb0-e007-4000-8000-000000000007"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: "/sitecore/content/bupa/bupa-corporate/Data/Link Lists/HeaderUtility/Services/Services in India/Hospitals"
 SharedFields:
-- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
-  Hint: Placeholder Key
-  Value: "sxa-test"
-- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
-  Hint: __Shared revision
-  Value: "be80cde6-7ea5-4008-a7b1-2d210a4fa689"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 20
 Languages:
 - Language: en
   Versions:
@@ -17,7 +14,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260507T020848Z
+      Value: 20260507T120000Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -28,11 +25,15 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "47d889bf-2395-43a5-87c3-eaa6f9f70d3c"
+      Value: "bc72ffb0-hu-HeaderUtility-Services-Services in India-Hospitals"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260507T020848Z
+      Value: 20260507T120000Z
+    - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
+      Hint: Link
+      Value: |
+        <link text="Hospitals" linktype="external" url="https://www.bupa.com/in/hospitals" anchor="" />

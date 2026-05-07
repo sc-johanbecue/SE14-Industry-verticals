@@ -15,17 +15,27 @@ SharedFields:
   Value: |
     {BC90AAAA-0000-4000-8000-000000000001}
     {BC90AAAA-0000-4000-8000-000000000002}
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Project/bupa/Header/Header
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{ABD4BD80-330F-4315-97C5-B1C3C0C857B1}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Header Folder']|query:$sharedSites/_[@@name='Data']/_[@@templatename='Header Folder']"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "bc800000-0001-4000-8000-000000000001"
+  Value: "30549746-a990-43dc-a8fd-b7c5d0d3c26c"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "71eb889b-dc81-49df-b630-6e2fa8017cd1"
   Versions:
   - Version: 1
     Fields:
@@ -34,11 +44,11 @@ Languages:
       Value: 20260506T110000Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ea83e404-442d-4597-bfaa-818a3c24c43f"
+      Value: "f8b20f9a-4c20-4f71-a041-6a3777129355"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T223133Z
+      Value: 20260507T104024Z

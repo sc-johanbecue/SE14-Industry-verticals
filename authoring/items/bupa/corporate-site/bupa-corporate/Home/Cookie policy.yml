@@ -1,20 +1,33 @@
----
+﻿---
 ID: "7b40f4ef-cd91-4970-aa04-bc4914e25ec4"
 Parent: "3acc9b51-6a8a-423b-98d1-e3071967c7a4"
 Template: "b9c9a7ee-72fc-47a6-bfa5-457734957597"
 Path: "/sitecore/content/bupa/bupa-corporate/Home/Cookie policy"
 SharedFields:
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6B54F301-8EF5-474E-9EB6-957EA7088F83}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "7b40f4efcd914970"
+  Value: "2140e9cb-32ed-4a76-8f93-dd9d91ba667b"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260506T120000Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cookie policy
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,17 +38,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a9657370-8aeb-4667-a2d3-1b1fcb236fd3"
+      Value: "86fe77e7-eba9-4df2-8cd5-992dfdbc697b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T120000Z
-    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
-      Hint: NavigationTitle
-      Value: "Cookie policy"
+      Value: 20260507T092859Z
     - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
       Hint: Title
-      Value: "Cookie policy"
+      Value: Cookie policy

@@ -376,11 +376,20 @@
   .component.link-list.link-list--corporate-footer
   .link-list__corporate-footer-title {
   margin: 0;
-  border-bottom: 1px solid rgb(255 255 255 / 0.15);
-  padding-bottom: 1rem;
-  font-size: 0.9375rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--footer-link-fg);
+}
+
+.component.bupa-corporate-footer .bupa-corporate-footer__follow-us-title {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--footer-link-fg);
 }
@@ -389,8 +398,11 @@
   .component.bupa-corporate-footer
     .component.link-list.link-list--corporate-footer
     .link-list__corporate-footer-title {
-    border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: 0.25rem;
+  }
+
+  .component.bupa-corporate-footer .bupa-corporate-footer__follow-us-title {
+    padding-bottom: 0.25rem;
   }
 }
 
@@ -413,7 +425,7 @@
   display: block;
   border-radius: 0.125rem;
   padding: 0.375rem 0;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.375;
   color: var(--footer-link-fg);
@@ -424,23 +436,21 @@
   .component.link-list.link-list--corporate-footer
   .link-list__corporate-footer-links
   a:hover {
-  text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.85);
 }
 
 .component.bupa-corporate-footer
   .component.link-list.link-list--corporate-footer
   + .component.link-list.link-list--corporate-footer {
   margin-top: 0;
-  border-top: 1px solid rgb(255 255 255 / 0.15);
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 @media (min-width: 768px) {
   .component.bupa-corporate-footer
     .component.link-list.link-list--corporate-footer
     + .component.link-list.link-list--corporate-footer {
-    border-top: none;
     padding-top: 0;
   }
 }
@@ -448,6 +458,7 @@
 .component.bupa-corporate-footer .bupa-corporate-footer__utility .component.link-list {
   display: block;
   max-width: 100%;
+  text-align: center;
 }
 
 .component.bupa-corporate-footer
@@ -525,7 +536,19 @@
   .component.link-list.link-list--corporate-utility-footer
   .component-content
   a:hover {
-  text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration: none;
   color: #fff;
+}
+
+.component.bupa-corporate-footer
+  .component.link-list.link-list--corporate-utility-footer
+  .link-list__utility-footer-text {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.8125rem;
+  line-height: 1.375;
+  vertical-align: baseline;
+  color: rgb(255 255 255 / 0.75);
 }
