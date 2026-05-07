@@ -5,6 +5,12 @@ Template: "b08d446e-dfa1-46f1-95c2-05de9bf82644"
 Path: "/sitecore/content/bupa/bupa-corporate/Presentation/Page Designs"
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bB9C9A7EE-72FC-47A6-BFA5-457734957597%7d%3d%257B77923EA0-E487-4BBF-A8AC-A6FBB6988866%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "75fcbfd4-4b9b-40f4-b456-0381671a77b8"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
@@ -26,11 +32,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0c4a5a7b-2e9f-4e68-a64a-5568b59cfb0e"
+      Value: "6e74bebb-bdf3-4294-86ef-dbf5337e1a73"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T102204Z
+      Value: 20260507T015713Z

@@ -1,0 +1,68 @@
+---
+ID: "bc728fe9-1101-4ee2-b770-0000000001C7"
+Parent: "bc728fe9-1101-4ee2-b770-0000000001C6"
+Template: "bc72dcc3-0001-400d-8010-010000000002"
+Path: "/sitecore/content/bupa/bupa-corporate/Data/BupaCorporateStatsSections/Default BupaCorporateStatsSection"
+SharedFields:
+- ID: "bc72dcc3-0001-400d-8010-010000000023"
+  Hint: Cta
+  Value: |
+    <link text="View our strategy" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{3ACC9B51-6A8A-423B-98D1-E3071967C7A4}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bc728fe9-1101-4ee2-b770-0000000001C7"
+
+
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "bc72dcc3-0001-400d-8010-010000000020"
+      Hint: Eyebrow
+      Value: Creating a
+    - ID: "bc72dcc3-0001-400d-8010-010000000021"
+      Hint: Title
+      Value: Better World
+    - ID: "bc72dcc3-0001-400d-8010-010000000022"
+      Hint: Body
+      Value: <p>We are committed to improving global health while caring for our planet.</p>
+    - ID: "bc72dcc3-0001-400d-8010-010000000025"
+      Hint: Stat1Value
+      Value: 2040
+    - ID: "bc72dcc3-0001-400d-8010-010000000026"
+      Hint: Stat1Description
+      Value: Our Net Zero target for a healthy future.
+    - ID: "bc72dcc3-0001-400d-8010-010000000027"
+      Hint: Stat2Value
+      Value: 500
+    - ID: "bc72dcc3-0001-400d-8010-010000000028"
+      Hint: Stat2Description
+      Value: Innovation start-ups engaged by 2025.
+    - ID: "bc72dcc3-0001-400d-8010-010000000029"
+      Hint: Stat3Value
+      Value: 1m
+    - ID: "bc72dcc3-0001-400d-8010-010000000030"
+      Hint: Stat3Description
+      Value: People supported by 2025.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260506T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bc728fe9-1101-4ee2-b770-0000000001C7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T120000Z

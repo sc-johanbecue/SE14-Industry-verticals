@@ -16,7 +16,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@for
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Keyboard, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, ChevronDown, CircleHelp, Phone, Search, UserRound, Globe, Menu, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Loader2, Check, Heart, Plus, Star, X, User, ShoppingCart, ArrowLeft, ChevronDown, CircleHelp, Phone, Search, UserRound, Globe, Menu } from 'lucide-react';
 import { ProductCard } from 'src/components/non-sitecore/ProductCard';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
 import { ProductCard as ProductCard_f5c29266c91cfe4f66c8f4e91c1fad0bbbe159f9 } from '@/components/non-sitecore/ProductCard';
@@ -53,7 +53,6 @@ import nextConfig from 'next.config';
 import { pageView } from '@sitecore-cloudsdk/events/browser';
 import config from 'sitecore.config';
 import { BupaHeroDesktopBgProvider, useBupaHeroDesktopBg } from '@/components/bupa/bupa-hero-desktop-bg-context';
-import { BupaCorporateHeroDesktopBgProvider, useBupaCorporateHeroDesktopBg } from '@/components/bupa/corporate/bupa-corporate-hero-desktop-bg-context';
 
 const importMap = [
   {
@@ -146,7 +145,6 @@ const importMap = [
       { name: 'UserRound', value: UserRound },
       { name: 'Globe', value: Globe },
       { name: 'Menu', value: Menu },
-      { name: 'Play', value: Play },
     ]
   },
   {
@@ -374,13 +372,6 @@ const importMap = [
     exports: [
       { name: 'BupaHeroDesktopBgProvider', value: BupaHeroDesktopBgProvider },
       { name: 'useBupaHeroDesktopBg', value: useBupaHeroDesktopBg },
-    ]
-  },
-  {
-    module: '@/components/bupa/corporate/bupa-corporate-hero-desktop-bg-context',
-    exports: [
-      { name: 'BupaCorporateHeroDesktopBgProvider', value: BupaCorporateHeroDesktopBgProvider },
-      { name: 'useBupaCorporateHeroDesktopBg', value: useBupaCorporateHeroDesktopBg },
     ]
   }
 ] as ImportEntry[];

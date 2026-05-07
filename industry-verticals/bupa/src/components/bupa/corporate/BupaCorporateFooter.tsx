@@ -51,7 +51,7 @@ export const Default = (props: BupaCorporateFooterProps): JSX.Element => {
   const id = props.params.RenderingIdentifier ?? props.rendering?.uid;
   const { styles, DynamicPlaceholderId } = props.params;
   const fields = props.fields || defaults;
-  const dph = DynamicPlaceholderId ?? '';
+  const dph = DynamicPlaceholderId ?? '1';
 
   const ph = {
     impact: `bupa-corporate-footer-impact-${dph}`,
@@ -144,6 +144,7 @@ export const Default = (props: BupaCorporateFooterProps): JSX.Element => {
           <SitecoreImage
             field={fields.Logo}
             className="h-10 w-auto object-contain opacity-95 md:h-12"
+            alt={fields.Logo?.value?.alt || 'Bupa'}
           />
 
           <div className="flex min-w-0 flex-1 flex-col gap-3 text-[0.8125rem] leading-snug text-white/75 md:items-end">

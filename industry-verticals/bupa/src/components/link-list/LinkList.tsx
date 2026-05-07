@@ -184,6 +184,116 @@ export const UtilityFooter = ({ params, fields }: LinkListProps) => {
   );
 };
 
+/**
+ * Bupa corporate footer columns: heading + vertical links at all breakpoints.
+ * No accordion and no chevron (unlike {@link Footer} for consumer footer).
+ */
+export const CorporateFooter = ({ params, fields }: LinkListProps) => {
+  const datasource = fields?.data?.datasource;
+  const styles = `component link-list link-list--corporate-footer ${params.styles || ''}`.trim();
+  const id = params.RenderingIdentifier;
+
+  if (!datasource) {
+    return (
+      <div className={styles} id={id}>
+        <div className="component-content">
+          <h3>Link List</h3>
+        </div>
+      </div>
+    );
+  }
+
+  const results = datasource.children.results.filter((element) => element?.field?.link);
+  const total = results.length;
+
+  const links = results.map((element, index) => (
+    <LinkListItem
+      key={`${index}-${element.field?.link}`}
+      index={index}
+      total={total}
+      field={element.field.link}
+    />
+  ));
+
+  return (
+    <div className={styles} id={id}>
+      <div className="component-content">
+        <Text
+          tag="h3"
+          field={datasource.field?.title}
+          className="link-list__corporate-footer-title"
+        />
+        <ul className="link-list__corporate-footer-links">{links}</ul>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Corporate footer bottom strip: same pipe-separated layout as {@link UtilityFooter},
+ * with a BEM modifier for corporate-specific styling under `.bupa-corporate-footer`.
+ */
+export const CorporateUtilityFooter = ({ params, fields }: LinkListProps) => {
+  const datasource = fields?.data?.datasource;
+  const styles =
+    `component link-list link-list--utility-footer link-list--corporate-utility-footer ${params.styles || ''}`.trim();
+  const id = params.RenderingIdentifier;
+
+  const renderContent = () => {
+    if (!datasource) {
+      return <h3>Link List</h3>;
+    }
+
+    const results = datasource.children.results.filter((element) => element?.field?.link);
+    const total = results.length;
+
+    const links = results.map((element, index) => {
+      const classNames = [
+        `item${index}`,
+        index % 2 === 0 ? 'odd' : 'even',
+        index === 0 ? 'first' : '',
+        index === total - 1 ? 'last' : '',
+      ]
+        .filter(Boolean)
+        .join(' ');
+      const isLast = index === total - 1;
+      return (
+        <li key={`${index}-${element.field?.link}`} className={classNames}>
+          <span className="link-list__utility-footer-pair">
+            <div className="field-link">
+              <ContentSdkLink
+                field={element.field.link}
+                className="link-list__utility-footer-link"
+              />
+            </div>
+            {!isLast ? (
+              <span className="link-list__utility-footer-pipe" aria-hidden>
+                |
+              </span>
+            ) : null}
+          </span>
+        </li>
+      );
+    });
+
+    return (
+      <ul
+        className="link-list__utility-footer"
+        role="navigation"
+        aria-label="Corporate footer links"
+      >
+        {links}
+      </ul>
+    );
+  };
+
+  return (
+    <div className={styles} id={id}>
+      <div className="component-content">{renderContent()}</div>
+    </div>
+  );
+};
+
 function subscribeMd(callback: () => void) {
   if (typeof window === 'undefined') {
     return () => {};

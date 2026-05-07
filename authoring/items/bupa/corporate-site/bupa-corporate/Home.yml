@@ -5,10 +5,88 @@ Template: "b9c9a7ee-72fc-47a6-bfa5-457734957597"
 Path: "/sitecore/content/bupa/bupa-corporate/Home"
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{77923EA0-E487-4BBF-A8AC-A6FBB6988866}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{6939309C-587B-4E28-8990-63EE913C267D}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "22261069-577b-4e5e-93ad-9452d05d7179"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{F0E1D2C3-B4A5-4678-9CDE-F10203040501}"
+          p:before="*"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001E1"
+          s:id="{BC800000-0001-4000-8000-000000000003}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=0"
+          s:ph="headless-main" />
+        <r
+          uid="{A0132282-0D93-4BFE-AA12-D1707522F171}"
+          p:after="r[@uid='{F0E1D2C3-B4A5-4678-9CDE-F10203040501}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001d1"
+          s:id="{BC800000-0001-4000-8000-000000000006}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="headless-main" />
+        <r
+          uid="{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040501}"
+          p:after="r[@uid='{A0132282-0D93-4BFE-AA12-D1707522F171}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001c5"
+          s:id="{BC800000-0001-4000-8000-00000000000C}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/bupa-corporate-cards-5" />
+        <r
+          uid="{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040502}"
+          p:after="r[@uid='{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040501}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001d2"
+          s:id="{BC800000-0001-4000-8000-00000000000C}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/bupa-corporate-cards-5" />
+        <r
+          uid="{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040503}"
+          p:after="r[@uid='{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040502}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001d3"
+          s:id="{BC800000-0001-4000-8000-00000000000C}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/bupa-corporate-cards-5" />
+        <r
+          uid="{D64BA3B6-CFD3-4ACE-B917-655B726C809B}"
+          p:after="r[@uid='{E1B2C3D4-5E6F-47A8-B9C0-D1E2F3040503}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001cd"
+          s:id="{BC800000-0001-4000-8000-00000000000A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{B3A81445-88B0-429F-B0F7-2AAD90AA30C1}"
+          p:after="r[@uid='{D64BA3B6-CFD3-4ACE-B917-655B726C809B}']"
+          s:ds="bc728fe9-1101-4ee2-b770-0000000001cf"
+          s:id="{BC800000-0001-4000-8000-00000000000B}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/bupa-corporate-thinking-cards-1" />
+        <r
+          uid="{9A316C84-D1B8-4948-8725-0067527DDA51}"
+          p:after="r[@uid='{B3A81445-88B0-429F-B0F7-2AAD90AA30C1}']"
+          s:ds="35ce0767-ce64-409f-95e6-26b9d70c49b5"
+          s:id="{BC800000-0001-4000-8000-00000000000B}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/bupa-corporate-thinking-cards-1" />
+        <r
+          uid="{2490C76C-3811-4E08-8598-24AA4413D9C6}"
+          p:after="*[1=2]"
+          s:ds="b7a72394-8159-44c1-81fa-cabee947b57e"
+          s:id="{BC800000-0001-4000-8000-00000000000B}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/bupa-corporate-thinking-cards-1" />
+      </d>
+    </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
@@ -17,12 +95,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260506T102203Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: "Home"
+      Value: Home
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -33,14 +114,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "93ece181-56e9-40ba-b762-f6ad5f68650b"
+      Value: "0c628bdd-e9e9-4c41-a067-9f5fb8c7610b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T102237Z
+      Value: 20260507T020258Z
     - ID: "e7f113ba-39fe-4cd9-a613-c41e0d10d5ca"
       Hint: Title
-      Value: "Home"
+      Value: Home
